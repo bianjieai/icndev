@@ -1,11 +1,11 @@
-FROM node:14.4.0-alpine3.12 AS builder
+FROM node:16.15.1-alpine3.16 as builder
 WORKDIR /app
 COPY . .
 ARG ENVIRONMENT=qa
 ARG BANKENADDR=null
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \
     apk add git && \
-    npm install --registry http://registry.npmmirror.com  && \ npm run params $BANKENADDR && \ npm docs:build
+    yarn install --registry http://registry.npmmirror.com  && \ yarn run params $BANKENADDR && \ yarn docs:build
 
 FROM nginx:1.19-alpine
 COPY --from=builder /app/docs/.vuepress/dist/ /usr/share/nginx/html/
