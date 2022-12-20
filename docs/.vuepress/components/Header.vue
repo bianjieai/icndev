@@ -33,6 +33,9 @@ export default {
     padding: 0.26rem 0;
     display: flex;
     align-items: center;
+    @media(max-width: 800px){
+      margin-left: 0.32rem;
+    }
     .header_image{
       width: 0.4rem;
     }

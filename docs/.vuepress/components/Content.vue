@@ -26,6 +26,7 @@ export default {
     align-items: center;
     flex-direction: column;
     padding-bottom: 0.6rem;
+
     .content_1{
       max-width: 8rem;
       font-size: 0.16rem;
@@ -33,6 +34,10 @@ export default {
       color: rgba(255,255,255,0.75);
       line-height: 0.24rem;
       margin-bottom: 0.16rem;
+      @media(max-width: 800px){
+        margin-left: 0.32rem;
+        margin-right: 0.32rem;
+      }
     }
     .content_title{
       max-width: 8rem;
@@ -41,6 +46,10 @@ export default {
       color: #FFFFFF;
       line-height: 0.29rem;
       margin-bottom: 0.16rem;
+      @media(max-width: 800px){
+        margin-left: 0.32rem;
+        margin-right: 0.32rem;
+      }
     }
     .content_2{
       max-width: 8rem;
@@ -48,6 +57,10 @@ export default {
       font-weight: 400;
       color: rgba(255,255,255,0.75);
       line-height: 0.24rem;
+      @media(max-width: 800px){
+        margin-left: 0.32rem;
+        margin-right: 0.32rem;
+      }
     }
   }
 }

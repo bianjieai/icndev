@@ -76,10 +76,16 @@ export default {
       color: rgba(255,255,255,0.75);
       line-height: 0.24rem;
       margin-bottom: 0.24rem;
+      @media(max-width: 800px){
+        margin:  0 0.32rem 0.24rem 0.32rem;
+      }
     }
     .input_content{
       margin: 0 auto;
       max-width: 4.4rem;
+      @media(max-width: 500px){
+        max-width: 3.2rem;
+      }
       /deep/.el-input{
         .el-input__inner{
           background: transparent;
@@ -94,6 +100,8 @@ export default {
           display: flex;
           align-items: center;
           padding:  0 0.14rem;
+          background: rgba(137, 65, 255, 0.15);
+          left: 0;
           .icon_email{
             width: 0.2rem;
             display: flex;
