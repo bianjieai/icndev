@@ -9,6 +9,10 @@ module.exports = {
     themeConfig:{
         search: false,
         navbar: false,
+        logo: '',
+        nextLinks: false,
+        prevLinks: false,
+        activeHeaderLinks: false,
         nav:[
             {
                 text:'InterChain NFTs'
