@@ -1,8 +1,7 @@
 <template>
   <div class="header_container">
     <div class="header_content">
-      <img class="header_image" src="../public/logo.png" alt="">
-      <span class="header_logo_label">Interchain NFTs</span>
+      <span class="header_logo_label">Game of NFTs</span>
     </div>
   </div>
 </template>
@@ -26,10 +25,10 @@ export default {
     width: 100%;
     max-width: 12rem;
     margin: 0 auto;
-    height: 0.30rem;
-    font-size: 0.24rem;
+    height: 0.28rem;
+    font-size: 0.28rem;
     color: #FFFFFF;
-    line-height: 0.3rem;
+    line-height: 0.28rem;
     padding: 0.26rem 0;
     display: flex;
     align-items: center;
