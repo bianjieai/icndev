@@ -4,13 +4,13 @@
       <div class="channel_title">Channels</div>
       <div class="channel_content_wrap">
         <div class="channel_discord">
-          <a href="" class="discord_link" target="_blank" rel="noreferrer noopener">
+          <a href="https://discord.gg/JCCxrZZaVg" class="discord_link" target="_blank" rel="noreferrer noopener">
             <img class="discord_image" src="../public/Discord.png" alt="">
             <span class="discord_label">Discord</span>
           </a>
         </div>
         <div class="channel_twitter">
-          <a href="" class="twitter_link" target="_blank" rel="noreferrer noopener">
+          <a href="https://twitter.com/irisnetwork" class="twitter_link" target="_blank" rel="noreferrer noopener">
             <img class="twitter_image" src="../public/Twitter.png">
             <span class="twitter_label">Twitter</span>
           </a>
