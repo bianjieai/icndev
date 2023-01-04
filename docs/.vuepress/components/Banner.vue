@@ -2,9 +2,7 @@
   <div class="banner_container">
     <div class="banner_content_wrap">
       <div class="banner_content_img">
-        <span class="banner_label">
-          Game of NFTs
-        </span>
+        <img class="banner_img" src="../public/banner.png">
       </div>
     </div>
   </div>
@@ -32,16 +30,10 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: url("../public/logo_bg.png") no-repeat center center;
-      background-size: cover;
       margin-top: 1.28rem;
-      .banner_label{
-        font-size: 0.4rem;
-        color: #FFFFFF;
-        line-height: 0.61rem;
-        text-shadow: 0 0 0.25rem #000000;
-        font-family: Silom;
-        white-space: nowrap;
+      .banner_img{
+        width: 3.66rem;
+        height: 4rem;
       }
     }
   }
