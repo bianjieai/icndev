@@ -6,7 +6,7 @@ export default async ({Vue,isServer,router}) => {
     if(!isServer){
         router.beforeEach((to,from,next) => {
             if(to.path === '/'){
-                next('/game-of-nfts-2023')
+                next('/warm-up')
             }else {
                 next()
             }
