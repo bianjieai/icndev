@@ -31,7 +31,7 @@ export default {
   methods:{
     submitEmail() {
       if (!EMAIL_REGEXP.test(this.email)){
-        this.$message.warning('Please enter the correct email address')
+        this.$message.warning('Please enter a valid email address')
         return
       }
       axios.post(`${serverUri}/api/subscribe/email`,{
