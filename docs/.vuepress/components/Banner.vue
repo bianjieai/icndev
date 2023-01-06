@@ -2,7 +2,7 @@
   <div class="banner_container">
     <div class="banner_content_wrap">
       <div class="banner_content_img">
-        <img class="banner_img" src="../public/banner.png">
+        <img class="banner_img" src="../public/banner.png" alt="Game of NFTs">
       </div>
     </div>
   </div>
