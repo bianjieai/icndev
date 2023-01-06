@@ -2,7 +2,7 @@ module.exports = {
     title:'Game of NFTs',
     description:'',
     base:'/',
-    headers:[
+    head:[
         ['link', { rel: 'icon', href: '/favicon.ico' }],
         ['meta', { name: 'keywords', content: 'GoN、Game of NFT、Interchain NFTs、IBC、Metadata、ICS-721' }],
     ],
