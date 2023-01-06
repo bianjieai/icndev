@@ -4,7 +4,7 @@ module.exports = {
     base:'/',
     head:[
         ['link', { rel: 'icon', href: '/favicon.ico' }],
-        ['meta', { name: 'keywords', content: 'GoN、Game of NFT、Interchain NFTs、IBC、Metadata、ICS-721' }],
+        ['meta', { name: 'keywords', content: 'GoN、Game of NFT、Interchain NFTs、IBC、Metadata、ICS-721、Cosmos、IRISnet、NFT Hub' }],
     ],
     themeConfig:{
         search: false,
