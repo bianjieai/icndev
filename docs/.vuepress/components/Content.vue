@@ -2,8 +2,10 @@
   <div class="content_container">
     <div class="content_wrap">
       <p class="content_1">Game of NFTs (GoN) is an event with public incentivized testnets and a hackathon where you can test the Interchain NFTs and build your NFT applications.</p>
-      <p class="content_title">Expected Time：Q1 2023</p>
-      <p class="content_2">This is a joint effort supported by many teams, including the Interchain Foundation, IRISnet, Stargaze and Gravity Bridge. And your participation is important to help the creation of the Game of NFTs. Share your ideas on GitHub or Discord!</p>
+      <p class="content_title">Phase 1 Incentivized Testnets: Coming Soon</p>
+      <p class="content_2">This is a joint effort brought by the Interchain Foundation, Cosmos Hub, IRISnet, Stargaze, Juno and multiple teams and communities. Now Phase 1 Incentivized Testnets is under intensive preparation, see real-time updates and progress on the <a style="color: #9E63FF" href="https://github.com/bianjieai/gon-testnets" target="_blank" rel="noreferrer noopener">GitHub</a> page.
+
+      </p>
     </div>
   </div>
 </template>
