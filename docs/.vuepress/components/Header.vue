@@ -2,13 +2,39 @@
   <div class="header_container">
     <div class="header_content">
       <span class="header_logo_label">Game of NFTs</span>
+      <ul class="header_menu_list_content">
+        <li class="header_menu_item" v-for="(item,index) in menuList" :key="index" @click="clickMenuItem">
+          <router-link class="header_item_link"  :class="item.isActive ? 'active_style' : ''" :to="item.href" >{{item.label}}</router-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data() {
+    return {
+      menuList: [
+        {
+          href:'/gon/',
+          label:'HOME',
+          isActive: false
+        },
+        {
+          href:'/gon/updates',
+          label:'UPDATES',
+          isActive: false
+        }
+      ]
+    }
+  },
+  methods:{
+    clickMenuItem(index) {
+
+    }
+  }
 }
 </script>
 
@@ -41,6 +67,27 @@ export default {
     .header_logo_label{
       margin-left: 0.12rem;
       font-family: Silom;
+    }
+    .header_menu_list_content{
+      display: flex;
+      gap:0.2rem;
+      margin: 0 0 0 0.75rem;
+      .header_menu_item{
+        .header_item_link{
+          font-size: 0.16rem;
+          font-weight: normal;
+          color: #FFFFFF;
+          line-height: 0.24rem;
+          text-shadow: 0 0 0.06rem #9B6FFF;
+        }
+        .active_style{
+          &::before{
+            width: 100%;
+            height: 0.2rem;
+            background: #fff;
+          }
+        }
+      }
     }
   }
 }
