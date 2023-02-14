@@ -58,7 +58,7 @@ export default {
         this.$message.warning('Please enter a valid email address')
         return
       }
-      axios.post(`${serverUri}/api/subscribe/email`, {
+      this.$axios.post(`${serverUri}/api/subscribe/email`, {
         email: this.email
       }).then(res => {
         if (res?.data?.code === 0 && res.data?.message) {
