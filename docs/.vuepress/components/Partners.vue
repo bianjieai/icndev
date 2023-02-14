@@ -38,35 +38,41 @@ export default {
     return {
       ecosystemLogos: [
         {
-          img: require('../public/partenersLogo/ICF.png'),
+          img: require('../public/partnersLogo/ICF.png'),
         },
         {
-          img: require('../public/partenersLogo/COSMOS HUB.png'),
+          img: require('../public/partnersLogo/COSMOS HUB.png'),
         },
         {
-          img: require('../public/partenersLogo/IRISNET.png'),
+          img: require('../public/partnersLogo/IRISNET.png'),
         },
         {
-          img: require('../public/partenersLogo/STARGAZE.png'),
+          img: require('../public/partnersLogo/STARGAZE.png'),
         },
         {
-          img: require('../public/partenersLogo/JUNO.png'),
+          img: require('../public/partnersLogo/JUNO.png'),
+        },
+        {
+          img: require('../public/partnersLogo/UPTICK.png'),
+        },
+        {
+          img: require('../public/partnersLogo/OMNIFLIX.png'),
         }
       ],
       institutionLogos: [
         {
-          img: require('../public/partenersLogo/AWS.png'),
+          img: require('../public/partnersLogo/AWS.png'),
         },
         {
-          img: require('../public/partenersLogo/HASHKEY.png'),
+          img: require('../public/partnersLogo/HASHKEY.png'),
         },
         {
-          img: require('../public/partenersLogo/IDG.png'),
+          img: require('../public/partnersLogo/IDG.png'),
         }
       ],
       technologyLogos:[
         {
-          img: require('../public/partenersLogo/BIANJIE.png'),
+          img: require('../public/partnersLogo/BIANJIE.png'),
         },
       ]
     }
@@ -77,12 +83,12 @@ export default {
 <style scoped lang="less">
 .partners_container {
   width: 100%;
-  padding-top: 0.8rem;
-  background: url("../public/partenersLogo/partner_bg.png") center center ;
+  padding-top: 1.28rem;
+  background: url("../public/partnersLogo/partner_bg.png") center center ;
   background-size: 100% 100%;
-  z-index: 2;
+  z-index: 5;
   @media(max-width: 576px){
-    padding-top: 0.48rem;
+    padding-top: 0;
   }
   position: relative;
   .bg_style{
@@ -136,7 +142,7 @@ export default {
         justify-content: center;
         flex-wrap: wrap;
         gap: 0.24rem;
-        max-width: 8rem;
+        max-width: 10rem;
         margin: 0.24rem auto 0 auto;
 
         .partner_ecosystem_item_logo {
@@ -181,7 +187,7 @@ export default {
     }
     .technology_content {
       margin-top: 0.64rem;
-      padding-bottom: 0.8rem;
+      padding-bottom: 0.48rem;
       @media(max-width: 576px){
         margin-top: 0.4rem;
         padding-bottom: 0.48rem;

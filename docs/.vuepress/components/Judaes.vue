@@ -77,6 +77,8 @@ export default {
 <style scoped lang="less">
 .judges_container {
   width: 100%;
+  position: relative;
+  z-index: 6;
   .judges_bg_style{
     background: url("../public/judges_bg.png") no-repeat center center;
     position: absolute;
@@ -98,7 +100,7 @@ export default {
     }
     @media(max-width: 576px){
       padding: 0 0.16rem;
-      margin: 0.48rem auto;
+      margin: 0.32rem auto;
     }
     .judges_content_title {
       font-size: 0.28rem;
@@ -171,7 +173,7 @@ export default {
             transform: translateX(-50%);
             background: transparent;
             z-index: 3;
-            border: 1.3rem solid #000;
+            border: 1.3rem solid #151515;
 
           }
           &:hover {

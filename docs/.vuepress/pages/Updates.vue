@@ -108,6 +108,7 @@ export default {
           line-height: 0.28rem;
           border-left: 0.02rem solid #fff;
           padding-left: 0.43rem;
+          letter-spacing: -0.006rem;
         }
         .list_item_description{
           padding-left: 0.43rem;

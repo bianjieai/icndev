@@ -78,6 +78,7 @@ export default {
       font-weight: normal;
       color: #FCFCFC;
       line-height: 0.48rem;
+      letter-spacing: -0.02rem;
       @media (max-width: 1200px) {
         text-align: center;
       }
@@ -96,6 +97,7 @@ export default {
       background: linear-gradient(196deg, #FFD6B2 0%, #FFFFFF 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      letter-spacing: -0.05rem;
       @media (max-width: 1200px) {
         text-align: center;
       }
@@ -107,6 +109,8 @@ export default {
 
     .register_content_wrap {
       display: flex;
+      position: relative;
+      z-index: 16;
       @media (max-width: 1200px) {
         flex-direction: column;
         align-items: center;
@@ -153,6 +157,7 @@ export default {
           }
           @media(max-width: 576px){
             width: 3.6rem;
+            height: 3.97rem;
           }
           img {
             width: 100%;
