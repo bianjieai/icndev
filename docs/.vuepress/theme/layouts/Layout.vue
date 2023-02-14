@@ -3,9 +3,10 @@
     <Header></Header>
     <main class="main_container">
       <Banner></Banner>
-      <Content></Content>
+      <how-to-join></how-to-join>
+      <Partners></Partners>
+      <judaes></judaes>
       <news-letter-input></news-letter-input>
-      <Channels></Channels>
     </main>
   </div>
 </template>
@@ -14,13 +15,19 @@
 import Header from "../../components/Header.vue";
 import NewsLetterInput from "../../components/NewsLetterInput.vue";
 import Banner from "../../components/Banner.vue";
-import Content from "../../components/Content.vue";
 import Channels from "../../components/Channels.vue";
+import HowToJoin from "../../components/HowToJoin";
+import HomeContent from "../../components/HomeContent";
+import Partners from "../../components/Partners";
+import Judaes from "../../components/Judaes";
 export default {
   name: "Layout",
   components:{
+    Judaes,
+    Partners,
+    HomeContent,
+    HowToJoin,
     Channels,
-    Content,
     Banner,
     NewsLetterInput,
     Header
