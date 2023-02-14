@@ -70,8 +70,8 @@ export default {
   background: url("../public/newsletter/subscribe_bg.jpg") no-repeat center center / cover;
   position: relative;
   @media(max-width: 576px){
-    background: url("../public/newsletter/subscribe_375bg.jpg")no-repeat center center;
-    background-size: 100% 100%;
+    background: url("../public/newsletter/subscribe_375bg.jpg")no-repeat left center;
+    background-size: cover;
   }
   .news_letter_bg_style {
     background: url("../public/judges_bg2.png") no-repeat left bottom;
