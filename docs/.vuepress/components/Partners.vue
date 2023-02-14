@@ -38,41 +38,41 @@ export default {
     return {
       ecosystemLogos: [
         {
-          img: require('../public/partenersLogo/ICF.png'),
+          img: require('../public/partnersLogo/ICF.png'),
         },
         {
-          img: require('../public/partenersLogo/COSMOS HUB.png'),
+          img: require('../public/partnersLogo/COSMOS HUB.png'),
         },
         {
-          img: require('../public/partenersLogo/IRISNET.png'),
+          img: require('../public/partnersLogo/IRISNET.png'),
         },
         {
-          img: require('../public/partenersLogo/STARGAZE.png'),
+          img: require('../public/partnersLogo/STARGAZE.png'),
         },
         {
-          img: require('../public/partenersLogo/JUNO.png'),
+          img: require('../public/partnersLogo/JUNO.png'),
         },
         {
-          img: require('../public/partenersLogo/UPTICK.png'),
+          img: require('../public/partnersLogo/UPTICK.png'),
         },
         {
-          img: require('../public/partenersLogo/OMNIFLIX.png'),
+          img: require('../public/partnersLogo/OMNIFLIX.png'),
         }
       ],
       institutionLogos: [
         {
-          img: require('../public/partenersLogo/AWS.png'),
+          img: require('../public/partnersLogo/AWS.png'),
         },
         {
-          img: require('../public/partenersLogo/HASHKEY.png'),
+          img: require('../public/partnersLogo/HASHKEY.png'),
         },
         {
-          img: require('../public/partenersLogo/IDG.png'),
+          img: require('../public/partnersLogo/IDG.png'),
         }
       ],
       technologyLogos:[
         {
-          img: require('../public/partenersLogo/BIANJIE.png'),
+          img: require('../public/partnersLogo/BIANJIE.png'),
         },
       ]
     }
@@ -84,7 +84,7 @@ export default {
 .partners_container {
   width: 100%;
   padding-top: 1.28rem;
-  background: url("../public/partenersLogo/partner_bg.png") center center ;
+  background: url("../public/partnersLogo/partner_bg.png") center center ;
   background-size: 100% 100%;
   z-index: 5;
   @media(max-width: 576px){
