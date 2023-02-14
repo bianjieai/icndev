@@ -4,7 +4,7 @@
       <p class="content_1">Game of NFTs (GoN) is an event with public incentivized testnets and a hackathon where you can test the Interchain NFTs and build your NFT applications.</p>
       <p class="content_title">Phase 1 Incentivized Testnets</p>
       <p class="content_registration">【Open for Registration】</p>
-      <p class="content_2">The registration for Phase 1 of Game of NFTs - Incentivized Testnets - is now open! 20,000 ATOMs will go to Phase 1 winners. Check out more details on the <a style="color: #9E63FF" href="https://github.com/bianjieai/gon-testnets" target="_blank" rel="noreferrer noopener">GitHub</a> page and register now!
+      <p class="content_2">The registration for Phase 1 of Game of NFTs - Incentivized Testnets - is now open! 20,000 ATOMs will go to Phase 1 winners. Check out more details on the <a style="color: #9E63FF" href="https://github.com/game-of-nfts/gon-testnets" target="_blank" rel="noreferrer noopener">GitHub</a> page and register now!
 
       </p>
     </div>

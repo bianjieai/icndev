@@ -40,7 +40,7 @@ export default {
 .register_container {
   width: 100%;
   position: relative;
-  z-index: 3;
+  z-index: 6;
 
   .bg_left_style {
     position: absolute;

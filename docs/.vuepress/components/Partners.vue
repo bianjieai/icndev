@@ -96,7 +96,7 @@ export default {
     width: 16.44rem;
     height: 16.86rem;
     background: url("../public/bg_2.png") no-repeat right bottom;
-    z-index: 1;
+    z-index: -1;
     bottom: -5rem;
     right: 0;
   }

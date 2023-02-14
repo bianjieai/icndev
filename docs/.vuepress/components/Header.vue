@@ -66,7 +66,7 @@ export default {
   left: 0;
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   backdrop-filter: blur(2px);
-  z-index: 10;
+  z-index: 90;
 
   .header_content {
     width: 100%;
@@ -85,6 +85,9 @@ export default {
       justify-content: space-between;
       box-sizing: border-box;
       padding: 0.26rem 0.36rem;
+    }
+    @media(max-width: 576px){
+      padding: 0.26rem 0.16rem;
     }
 
     .header_image {
