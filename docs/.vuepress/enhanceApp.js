@@ -5,6 +5,7 @@ export default async ({Vue,isServer,router}) => {
     Vue.use(router);
     if(!isServer){
         router.beforeEach((to,from,next) => {
+            console.log(to,from)
             if(to.path === '/'){
                 next('/gon')
             }else {
