@@ -1,6 +1,7 @@
 <template>
   <div class="judges_container">
     <div class="judges_content_wrap">
+      <div class="judges_bg_style"></div>
       <div class="judges_content_title">Judges & Mentors</div>
       <ul class="judges_list_content">
         <li class="judges_item" v-for="(item , index) in judges" :key="index">
@@ -9,6 +10,17 @@
             <div class="judges_description">
               <div class="judges_name">{{item.name}}</div>
               <div class="judges_post">{{item.post}}</div>
+            </div>
+
+            <div class="judges_bg_mask"></div>
+          </div>
+        </li>
+        <li class="judges_item">
+          <div class="judges_item_content">
+            <div class="judges_bg"></div>
+            <div class="judges_description">
+              <div class="judges_name">...</div>
+              <div class="judges_post"></div>
             </div>
 
             <div class="judges_bg_mask"></div>
@@ -41,9 +53,10 @@ export default {
           post:'Co-founder, Stargaze'
         },
         {
-          img:require('../public/judges/default.jpg'),
+          img:require('../public/judges/JakeHartnell.png'),
           name:'Jake Hartnell',
-          post:'xxx, Juno'
+          post:'Co-founder, \n' +
+            'Juno/DAO DAO'
         },
         {
           img:require('../public/judges/BrianXin.jpg'),
@@ -64,11 +77,21 @@ export default {
 <style scoped lang="less">
 .judges_container {
   width: 100%;
-
+  .judges_bg_style{
+    background: url("../public/judges_bg.png") no-repeat center center;
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    z-index: 1;
+    width: 2.06rem;
+    height: 3.72rem;
+  }
   .judges_content_wrap {
     width: 100%;
     max-width: 8rem;
     margin: 0.8rem auto;
+    position: relative;
+    z-index: 3;
     @media(max-width: 800px){
       box-sizing: border-box;
       padding: 0 0.36rem;
@@ -123,9 +146,9 @@ export default {
             }
             .judges_post{
               margin-top: 0.08rem;
-              font-size: 0.14rem;
+              font-size: 0.13rem;
               font-weight: 400;
-              color: #FFFFFF;
+              color: rgba(255,255,255,0.75);
               line-height: 0.16rem;
             }
           }
@@ -149,6 +172,7 @@ export default {
             background: transparent;
             z-index: 3;
             border: 1.3rem solid #000;
+
           }
           &:hover {
             .judges_bg{
@@ -156,9 +180,23 @@ export default {
             }
           }
         }
-
-
       }
+      .judges_item:last-child{
+        .judges_item_content{
+          background:  url('../public/judges/comingsoon.png') no-repeat center center/cover;
+        }
+        .judges_description{
+          .judges_name{
+            text-align: center;
+          }
+        }
+        &:hover {
+          .judges_bg{
+            animation: none;
+          }
+        }
+      }
+
     }
   }
 

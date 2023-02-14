@@ -13,7 +13,10 @@
         <div class="update_list_wrap">
           <div class="list_item_title">{{item.title}}</div>
           <div class="list_item_description">{{item.desc}}</div>
-          <div class="list_item_time">{{item.time}}</div>
+          <div class="list_item_time">
+            <span>by {{item.author}}</span>
+            <span style="margin-left: 0.24rem">{{item.time}}</span>
+          </div>
         </div>
       </a>
     </div>

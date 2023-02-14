@@ -1,5 +1,6 @@
 <template>
   <div class="partners_container">
+    <div class="bg_style"></div>
     <div class="partners_content_wrap">
       <div class="partner_content_title">Partners & Sponsors</div>
       <div class="partner_ecosystem_content">
@@ -77,15 +78,28 @@ export default {
 .partners_container {
   width: 100%;
   padding-top: 0.8rem;
-  background: url("../public/partenersLogo/partners_bg.png") center center ;
+  background: url("../public/partenersLogo/partner_bg.png") center center ;
   background-size: 100% 100%;
+  z-index: 2;
   @media(max-width: 576px){
     padding-top: 0.48rem;
+  }
+  position: relative;
+  .bg_style{
+    position: absolute;
+    width: 16.44rem;
+    height: 16.86rem;
+    background: url("../public/bg_2.png") no-repeat right bottom;
+    z-index: 1;
+    bottom: -5rem;
+    right: 0;
   }
   .partners_content_wrap {
     width: 100%;
     max-width: 12rem;
     margin: 0 auto;
+    position: relative;
+    z-index: 3;
     @media(max-width: 1200px){
       box-sizing: border-box;
       padding: 0 0.36rem;
@@ -100,6 +114,7 @@ export default {
       color: #FFFFFF;
       line-height: 0.34rem;
       text-align: center;
+      letter-spacing: -0.02rem;
     }
 
     .partner_ecosystem_content {
@@ -113,6 +128,7 @@ export default {
         color: rgba(255, 255, 255, 0.74);
         line-height: 0.24rem;
         text-align: center;
+        letter-spacing: -0.007rem;
       }
 
       .partner_ecosystem_logo_content {

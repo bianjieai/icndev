@@ -3,7 +3,6 @@
     <Header></Header>
     <main class="main_container">
       <Banner></Banner>
-      <HomeContent></HomeContent>
       <how-to-join></how-to-join>
       <Partners></Partners>
       <judaes></judaes>

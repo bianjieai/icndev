@@ -5,7 +5,6 @@ export default async ({Vue,isServer,router}) => {
     Vue.use(router);
     if(!isServer){
         router.beforeEach((to,from,next) => {
-            console.log(to.path,'好像是这里的问题')
             if(to.path === '/'){
                 debugger
                 next('/gon')

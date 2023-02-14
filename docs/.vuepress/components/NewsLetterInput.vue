@@ -1,5 +1,6 @@
 <template>
   <div class="news_letter_container">
+    <div class="news_letter_bg_style"></div>
     <div class="news_letter_content_wrap">
       <div class="news_letter_title">Subscribe Now</div>
       <div class="news_letter_input_content">
@@ -81,6 +82,20 @@ export default {
   width: 100%;
   background: #000000;
   background: url("../public/newsletter/subscribe_bg.jpg") no-repeat center center / cover;
+  position: relative;
+  .news_letter_bg_style {
+    background: url("../public/judges_bg2.png") no-repeat left bottom;
+    width: 4.36rem;
+    height: 4.36rem;
+    position: absolute;
+    right:0;
+    bottom:5rem;
+    @media(max-width: 576px){
+      width: 3rem;
+      height: 3rem;
+      bottom:0rem;
+    }
+  }
 
   .news_letter_content_wrap {
     width: 100%;
@@ -94,7 +109,7 @@ export default {
       line-height: 0.32rem;
       padding-top: 0.8rem;
       text-align: center;
-      @media(max-width: 576px){
+      @media (max-width: 576px) {
         padding-top: 0.48rem;
       }
     }
@@ -103,18 +118,20 @@ export default {
       display: flex;
       justify-content: flex-end;
       margin-top: 0.72rem;
-      @media(max-width: 576px){
+      @media (max-width: 576px) {
         margin-top: 0.48rem;
         justify-content: center;
       }
+
       .news_letter_input_content_wrap {
-        @media(max-width: 1200px){
+        @media (max-width: 1200px) {
           box-sizing: border-box;
           padding-right: 0.36rem;
         }
-        @media(max-width: 576px){
+        @media (max-width: 576px) {
           padding: 0 0.16rem;
         }
+
         .news_letter_description {
           font-size: 0.16rem;
           font-weight: 400;
@@ -122,7 +139,7 @@ export default {
           line-height: 0.24rem;
           margin-bottom: 0.32rem;
           max-width: 4rem;
-          @media(max-width: 576px){
+          @media (max-width: 576px) {
             text-align: center;
           }
         }
@@ -170,11 +187,12 @@ export default {
           width: 100%;
           max-width: 1.8rem;
           margin-top: 0.16rem;
-          @media(max-width: 576px){
+          @media (max-width: 576px) {
             max-width: none;
             display: flex;
             justify-content: center;
           }
+
           .el-button {
             width: 100%;
             background: url("../public/button_normal.png") no-repeat center center/cover;
@@ -184,9 +202,10 @@ export default {
             font-weight: 400;
             color: #FFFFFF;
             line-height: 0.20rem;
-            @media(max-width: 576px){
+            @media (max-width: 576px) {
               max-width: 1.8rem;
             }
+
             &:hover {
               background: url("../public/button_hover.png") no-repeat center center/cover;
             }
