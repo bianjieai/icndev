@@ -38,18 +38,18 @@ export default {
 <style lang="less">
 @import "../styles/index";
 @font-face {
-  font-family:Regular;
-  src: url("../../public/Inter-Regular-9.otf");
+  font-family:Silom;
+  src: url("../../public/font/Silom.ttf");
 }
 @font-face {
-  font-family:Silom;
-  src: url("../../public/Silom.ttf");
+  font-family:Inter;
+  src: url("../../public/font/Inter_var.ttf");
 }
 html {
   width: 100%;
   height: 100%;
   font-size: 625% !important;
-  font-family: Regular, "PingFang SC Regular","PingFang SC Bold", "serif";
+  font-family: Inter, "PingFang SC Regular","PingFang SC Bold", "serif";
 }
 
 body {

@@ -51,6 +51,12 @@ export default {
         },
         {
           img: require('../public/partenersLogo/JUNO.png'),
+        },
+        {
+          img: require('../public/partenersLogo/UPTICK.png'),
+        },
+        {
+          img: require('../public/partenersLogo/OMNIFLIX.png'),
         }
       ],
       institutionLogos: [
@@ -77,12 +83,12 @@ export default {
 <style scoped lang="less">
 .partners_container {
   width: 100%;
-  padding-top: 0.8rem;
+  padding-top: 1.28rem;
   background: url("../public/partenersLogo/partner_bg.png") center center ;
   background-size: 100% 100%;
-  z-index: 2;
+  z-index: 5;
   @media(max-width: 576px){
-    padding-top: 0.48rem;
+    padding-top: 0;
   }
   position: relative;
   .bg_style{
@@ -136,7 +142,7 @@ export default {
         justify-content: center;
         flex-wrap: wrap;
         gap: 0.24rem;
-        max-width: 8rem;
+        max-width: 10rem;
         margin: 0.24rem auto 0 auto;
 
         .partner_ecosystem_item_logo {
@@ -181,7 +187,7 @@ export default {
     }
     .technology_content {
       margin-top: 0.64rem;
-      padding-bottom: 0.8rem;
+      padding-bottom: 0.48rem;
       @media(max-width: 576px){
         margin-top: 0.4rem;
         padding-bottom: 0.48rem;

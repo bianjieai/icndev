@@ -98,7 +98,7 @@ export default {
 
     .header_menu_list_content {
       display: flex;
-      gap: 0.2rem;
+      gap: 0.6rem;
       margin: 0 0 0 0.75rem;
       @media(max-width: 800px){
         display: none;

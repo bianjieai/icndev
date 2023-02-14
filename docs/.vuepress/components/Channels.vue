@@ -41,6 +41,7 @@ export default {
       color: rgba(255,255,255,0.75);
       line-height: 0.24rem;
       margin-bottom: 0.24rem;
+      letter-spacing: -0.007rem;
       @media(max-width: 576px){
         text-align: center;
       }
