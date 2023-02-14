@@ -5,8 +5,8 @@ export default async ({Vue,isServer,router}) => {
     Vue.use(router);
     if(!isServer){
         router.beforeEach((to,from,next) => {
+            console.log(to,from)
             if(to.path === '/'){
-                debugger
                 next('/gon')
             }else {
                 next()
@@ -14,7 +14,7 @@ export default async ({Vue,isServer,router}) => {
         })
         await import("axios").then(module => {
             console.log(module)
-            Vue.use(module.default)
+            Vue.prototype.$axios = module.default
         })
         await import('element-ui').then(module => {
             Vue.use(module.default)
