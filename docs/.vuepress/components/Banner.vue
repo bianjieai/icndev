@@ -24,6 +24,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+
     .banner_content_img{
       width: 2.8rem;
       height: 2.8rem;

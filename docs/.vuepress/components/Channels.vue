@@ -4,15 +4,13 @@
       <div class="channel_title">Channels</div>
       <div class="channel_content_wrap">
         <div class="channel_discord">
-          <a href="https://discord.gg/JCCxrZZaVg" class="discord_link" target="_blank" rel="noreferrer noopener">
+          <a href="https://discord.gg/cosmosnetwork" class="discord_link" target="_blank" rel="noreferrer noopener">
             <img class="discord_image" src="../public/Discord.png" alt="">
-            <span class="discord_label">Discord</span>
           </a>
         </div>
         <div class="channel_twitter">
           <a href="https://twitter.com/irisnetwork" class="twitter_link" target="_blank" rel="noreferrer noopener">
             <img class="twitter_image" src="../public/Twitter.png">
-            <span class="twitter_label">Twitter</span>
           </a>
         </div>
       </div>
@@ -29,20 +27,24 @@ export default {
 <style scoped lang="less">
 .channel_container {
   width: 100%;
-  background: rgba(0, 0, 0, 1);
   padding-bottom: 2.07rem;
+  margin-top: 0.4rem;
+  @media(max-width: 576px){
+    margin-top: 0.6rem;
+  }
   .channel_content {
     width: 100%;
     max-width: 12rem;
-    margin: 0 auto;
-
     .channel_title {
-      text-align: center;
       font-size: 0.20rem;
       font-weight: bold;
-      color: #FFFFFF;
+      color: rgba(255,255,255,0.75);
       line-height: 0.24rem;
       margin-bottom: 0.24rem;
+      letter-spacing: -0.007rem;
+      @media(max-width: 576px){
+        text-align: center;
+      }
     }
 
     .channel_content_wrap {
@@ -51,8 +53,11 @@ export default {
       color: #FFFFFF;
       line-height: 0.18rem;
       display: flex;
-      justify-content: center;
-      gap: 0.6rem;
+      justify-content: flex-start;
+      gap: 0.4rem;
+      @media(max-width: 576px){
+        justify-content: center;
+      }
       .channel_discord {
         .discord_link {
           display: flex;
