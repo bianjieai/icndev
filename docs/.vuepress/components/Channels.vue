@@ -4,7 +4,7 @@
       <div class="channel_title">Channels</div>
       <div class="channel_content_wrap">
         <div class="channel_discord">
-          <a href="https://discord.gg/JCCxrZZaVg" class="discord_link" target="_blank" rel="noreferrer noopener">
+          <a href="https://discord.gg/cosmosnetwork" class="discord_link" target="_blank" rel="noreferrer noopener">
             <img class="discord_image" src="../public/Discord.png" alt="">
           </a>
         </div>
