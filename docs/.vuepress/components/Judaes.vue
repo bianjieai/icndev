@@ -109,6 +109,7 @@ export default {
       line-height: 0.32rem;
       text-align: center;
       margin-bottom: 0.54rem;
+      letter-spacing: -0.02rem;
       @media(max-width: 576px){
         font-size: 0.24rem;
         line-height: 0.28rem;

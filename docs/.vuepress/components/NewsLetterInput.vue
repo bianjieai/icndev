@@ -127,7 +127,7 @@ export default {
           font-size: 0.21rem;
           font-weight: 400;
           color: rgba(255, 255, 255, 0.75);
-          line-height: 0.24rem;
+          line-height: 0.34rem;
           margin-bottom: 0.32rem;
           max-width: 4rem;
           letter-spacing: -0.007rem;
@@ -149,6 +149,7 @@ export default {
               border-color: rgba(255, 255, 255, 0.35);
               padding-left: 0;
               text-indent: 0.56rem;
+              color: #fff;
             }
 
             .el-input__inner::placeholder {
