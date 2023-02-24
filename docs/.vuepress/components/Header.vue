@@ -38,6 +38,16 @@ export default {
           href: '/gon/updates.html',
           label: 'UPDATES',
           isActive: false
+        },
+        {
+          href: '/gon/challengescope.html',
+          label: 'CHALLENGE SCOPE',
+          isActive: false
+        },
+        {
+          href: '/gon/scoreboard.html',
+          label: 'SCORE CARD',
+          isActive: false
         }
       ],
       isShowMobileMenu:false
