@@ -41,6 +41,7 @@ export default {
     display: flex;
     justify-content: flex-end;
     max-width: 12rem;
+    margin:0 auto;
     .update_time_content {
       display: flex;
       align-items: center;

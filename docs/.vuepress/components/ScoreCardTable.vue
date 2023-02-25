@@ -1,19 +1,21 @@
 <template>
   <div class="score_card_table">
-    <el-table :data="rankData" :header-row-class-name="'header_style'">
-      <el-table-column v-for="(item,index) in columnData"
-                       :prop="item.prop"
-                       :label="item.label"
-                       :min-width="item.width">
-        <template slot-scope="scope">
-          <div class="content_container">
-            <img class="rank_first_img" v-show="item.label==='Rank' && scope.row[item.prop] == 1"
-                 src="../public/scoreCard/star.png" alt="">
-            <span>{{ scope.row[item.prop] }}</span>
-          </div>
-        </template>
-      </el-table-column>
-    </el-table>
+    <vue-scroll :ops="scrollBarConfig">
+      <el-table :data="rankData" :header-row-class-name="'header_style'">
+        <el-table-column v-for="(item,index) in columnData"
+                         :prop="item.prop"
+                         :label="item.label"
+                         :min-width="item.width">
+          <template slot-scope="scope">
+            <div class="content_container">
+              <img class="rank_first_img" v-show="item.label==='Rank' && scope.row[item.prop] == 1"
+                   src="../public/scoreCard/star.png" alt="">
+              <span :class="item.label === 'Team Name'? 'ellipsis_style' : ''">{{ scope.row[item.prop] }}</span>
+            </div>
+          </template>
+        </el-table-column>
+      </el-table>
+    </vue-scroll>
     <div class="pagination_content" v-show="rankData.length">
       <el-pagination :total="rankDataTotal":current-page="page" :page-size="size" layout="slot" @current-change="changePage">
         <button class="first_button_content" @click="toFirstPage">
@@ -37,6 +39,26 @@ export default {
   data() {
     return {
       rankData:[],
+      scrollBarConfig :{
+        detectResize:false,
+        rail: {
+          opacity: 1,
+          background: 'rgba(137, 65, 255, 0.34)',
+          size: '6px',
+        },
+        bar: {
+          keepShow: true,
+          size: '6px',
+          minSize: 0.1,
+          background: 'rgba(137, 65, 255, 1)',
+        },
+        vuescroll: {
+          wheelScrollDuration: 0,
+          wheelDirectionReverse: false,
+          locking: true,
+          checkShifKey: true,
+        },
+      },
       columnData: [
         {
           prop: 'rank',
@@ -62,7 +84,7 @@ export default {
       rankDataTotal:0,
       size:20,
       page:1,
-      lastPageNumber: 0,
+      lastPageNumber: 1,
     }
   },
   created() {
@@ -80,16 +102,12 @@ export default {
     changePage(e){
       this.page=e
       this.getRankData(this.page,this.size)
-      console.log(e,'当前的页码')
     },
     getRankData(page=1,size=20) {
       const serverUri = `http://interchainnfts.dev.sh.bianjie.ai`
-      // TODO TEST
       this.$axios.get(`${serverUri}/api/subscribe/challenge-score?page=${page}&size=${size}`).then(res => {
-        console.log(res.data,'这里会报错吗')
         if (res?.data?.code === 0 && res.data?.data) {
-          this.$emit('updateTime',res.data.data.update_time)
-          this.rankDataTotal = res.data.total = 100;
+          this.rankDataTotal = res.data.total ;
           this.lastPageNumber = Math.ceil(this.rankDataTotal / this.size)
           this.rankData = res.data.data.score_rank;
         }
@@ -256,7 +274,15 @@ export default {
   display: flex;
   align-items: center;
   position: relative;
-
+  color: rgba(255,255,255,0.82);
+  letter-spacing: -0.0053rem;
+  .ellipsis_style{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
   .rank_first_img {
     position: absolute;
     width: 0.2rem;

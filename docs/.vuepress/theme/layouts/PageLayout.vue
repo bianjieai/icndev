@@ -1,9 +1,9 @@
 <template>
   <div class="page_container">
-    <Header></Header>
+    <Header :key="new Date().getTime()"></Header>
     <Updates v-if="this.$page.title==='Updates'"></Updates>
-    <ChanlengeScope v-if="this.$page.title==='ChallengesScope'"></ChanlengeScope>
-    <ScoreCard v-if="this.$page.title==='ScoreCard'"></ScoreCard>
+    <ChanlengeScope v-if="this.$page.title==='ChallengesScope'&& new Date().getTime() >= 1677650400000"></ChanlengeScope>
+    <ScoreCard v-if="this.$page.title==='ScoreCard'&& new Date().getTime() >= 1677650400000"></ScoreCard>
   </div>
 </template>
 
@@ -15,9 +15,6 @@ import ScoreCard from "../../pages/ScoreCard";
 export default {
   name: "PageLayout.vue",
   components: {ScoreCard, ChanlengeScope, Header, Updates},
-  mounted() {
-    console.log(this.$page,'????')
-  }
 }
 </script>
 

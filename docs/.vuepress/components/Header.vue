@@ -39,6 +39,14 @@ export default {
           label: 'UPDATES',
           isActive: false
         },
+      ],
+      isShowMobileMenu:false
+    }
+  },
+  mounted() {
+    if(new Date().getTime() >= 1677650400000) {
+      this.menuList =[
+        ...this.menuList,
         {
           href: '/gon/challengescope.html',
           label: 'CHALLENGE SCOPE',
@@ -49,12 +57,10 @@ export default {
           label: 'SCORE CARD',
           isActive: false
         }
-      ],
-      isShowMobileMenu:false
+      ]
     }
-  },
-  mounted() {
     this.menuList.forEach(item => {
+      console.log(this.$route.path)
       if (item.href === this.$route.path) {
         item.isActive = true
       }
