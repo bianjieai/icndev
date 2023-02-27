@@ -35,8 +35,8 @@
         {
             "title": "[Video] Cosmos Hub Community Call on Game of NFTs",
             "desc": "This is a recorded video regarding of the 4 Jan 2023 Cosmos Hub community call, hosted on Twitter: Game of NFTs - a event for Interchain NFTs.",
-            "author":"Interchain",
-            "time": "Foundation Jan 6, 2022",
+            "author":"Interchain Foundation",
+            "time": "Jan 6, 2022",
             "href": "https://www.youtube.com/watch?v=Hfadm7uIr_c&t=328s",
         },
         {
