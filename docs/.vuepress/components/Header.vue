@@ -44,7 +44,7 @@ export default {
     }
   },
   mounted() {
-    if(new Date().getTime() >= 1677650400000) {
+    if(new Date().getTime() >= 1677650400) {
       this.menuList =[
         ...this.menuList,
         {

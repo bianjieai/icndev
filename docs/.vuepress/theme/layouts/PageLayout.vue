@@ -2,8 +2,8 @@
   <div class="page_container">
     <Header :key="new Date().getTime()"></Header>
     <Updates v-if="this.$page.title==='Updates'"></Updates>
-    <ChanlengeScope v-if="this.$page.title==='ChallengesScope'&& new Date().getTime() >= 1677650400000"></ChanlengeScope>
-    <ScoreCard v-if="this.$page.title==='ScoreCard'&& new Date().getTime() >= 1677650400000"></ScoreCard>
+    <ChanlengeScope v-if="this.$page.title==='ChallengesScope'&& new Date().getTime() >= 1677650400"></ChanlengeScope>
+    <ScoreCard v-if="this.$page.title==='ScoreCard'&& new Date().getTime() >= 1677650400"></ScoreCard>
   </div>
 </template>
 

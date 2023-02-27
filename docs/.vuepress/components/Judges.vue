@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: "Judaes",
+  name: "Judges",
   data() {
     return {
       judges:[
@@ -55,7 +55,7 @@ export default {
         {
           img:require('../public/judges/JakeHartnell.png'),
           name:'Jake Hartnell',
-          post:'Co-founder, \n' +
+          post:'Co-founder,' +
             'Juno/DAO DAO'
         },
         {
@@ -64,9 +64,29 @@ export default {
           post:'Founder, Uptick Network'
         },
         {
+          img:require('../public/judges/DayakarReddy.png'),
+          name:'Dayakar Reddy',
+          post:'Founder, OmniFlix Network'
+        },
+        {
+          img:require('../public/judges/SijieHan.png'),
+          name:'Sijie Han',
+          post:'Solution Architect, AWS'
+        },
+        {
+          img:require('../public/judges/0xUncleLee.Lalaland.png'),
+          name:'0xUncleLee.Lalaland',
+          post:'Startup Ecosystem Evangelist, AWS'
+        },
+        {
           img:require('../public/judges/JeffreyHu.jpg'),
           name:'Jeffrey Hu',
           post:'Tech Lead, HashKey Capital'
+        },
+        {
+          img:require('../public/judges/JeffreyHu.jpg'),
+          name:'Johanna',
+          post:'Associate, IDG Capital'
         },
       ]
     }
@@ -146,6 +166,7 @@ export default {
               font-weight: 600;
               color: #FFFFFF;
               line-height: 0.24rem;
+              word-wrap: break-word;
             }
             .judges_post{
               margin-top: 0.08rem;
