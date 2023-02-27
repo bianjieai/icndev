@@ -7,9 +7,11 @@
   "dependencies": {
     "async-validator": "^1.11.5",
     "axios": "^1.2.1",
+    "dayjs": "^1.11.7",
     "element-ui": "^2.15.12",
     "less": "^4.1.3",
     "less-loader": "7.3.0",
-    "vuepress": "^1.9.7"
+    "vuepress": "^1.9.7",
+    "vuescroll": "^4.17.5"
   }
 }

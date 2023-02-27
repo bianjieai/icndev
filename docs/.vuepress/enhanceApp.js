@@ -1,5 +1,6 @@
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+import vuescroll from "vuescroll";
 export default async ({Vue,isServer,router}) => {
     Vue.use(Element);
     Vue.use(router);
@@ -20,6 +21,11 @@ export default async ({Vue,isServer,router}) => {
             Vue.use(module.default)
         }).catch(e => {
             console.log(e, 'element-ui error ')
+        })
+        await import('vuescroll').then(module => {
+            Vue.use(module.default)
+        }).catch(e => {
+
         })
     }
 }
