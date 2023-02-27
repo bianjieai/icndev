@@ -13,5 +13,8 @@
     "less-loader": "7.3.0",
     "vuepress": "^1.9.7",
     "vuescroll": "^4.17.5"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.9.9"
   }
 }

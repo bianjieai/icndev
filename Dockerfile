@@ -3,10 +3,12 @@ WORKDIR /app
 COPY . .
 ARG ENVIRONMENT=qa
 ARG BANKENADDR=null
+ARG GOOGLEANALYTICSID=0
+ARG RELEASTTIME=0
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \
     apk add git && \
     yarn install --registry http://registry.npmmirror.com \
-    && yarn run params $BANKENADDR  \
+    && yarn run params $BANKENADDR,$GOOGLEANALYTICSID,$RELEASTTIME  \
     && yarn docs:build
 
 FROM nginx:1.19-alpine

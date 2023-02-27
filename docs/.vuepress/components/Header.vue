@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import config from "../config/config.json"
 export default {
   name: "Header",
   data() {
@@ -44,7 +45,7 @@ export default {
     }
   },
   mounted() {
-    if(new Date().getTime() >= 1677650400) {
+    if(new Date().getTime() >= config.releaseTime) {
       this.menuList =[
         ...this.menuList,
         {
