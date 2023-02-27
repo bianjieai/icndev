@@ -5,6 +5,13 @@
     "layout": "PageLayout",
     "updateList":[
         {
+            "title": "[Blog] Announcing Game of NFTs - Incentivized Testnet is Open for Registration!",
+            "desc": "This blogpost announces the start of registration for GoN phase 1 incentivized testing, and provides an overall introduction to this event.",
+            "author":"IRISnet",
+            "time": "Feb 15, 2023",
+            "href": "https://blog.cosmos.network/announcing-game-of-nfts-phase-1-incentivized-testnet-is-open-for-registration-44091b05520e",
+        },
+        {
             "title": "[Video] This will let you trade NFTs across the cosmos network",
             "desc": "This episode talks to Haifeng who created the spec, discussing its implication for Cosmos Appchains and the Interchain ecosystem, sharing updates about the new incentivized testnet and hackathon, the Game of NFTs.",
             "author":"Chjango Unchained",

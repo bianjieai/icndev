@@ -1,16 +1,20 @@
 <template>
   <div class="page_container">
-    <Header></Header>
-    <Updates></Updates>
+    <Header :key="new Date().getTime()"></Header>
+    <Updates v-if="this.$page.title==='Updates'"></Updates>
+    <ChanlengeScope v-if="this.$page.title==='ChallengesScope'&& new Date().getTime() >= 1677650400000"></ChanlengeScope>
+    <ScoreCard v-if="this.$page.title==='ScoreCard'&& new Date().getTime() >= 1677650400000"></ScoreCard>
   </div>
 </template>
 
 <script>
 import Updates from "../../pages/Updates";
 import Header from "../../components/Header";
+import ChanlengeScope from "../../pages/ChallengeScope";
+import ScoreCard from "../../pages/ScoreCard";
 export default {
   name: "PageLayout.vue",
-  components: {Header, Updates},
+  components: {ScoreCard, ChanlengeScope, Header, Updates},
 }
 </script>
 
