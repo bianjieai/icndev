@@ -34,6 +34,7 @@
 </template>
 
 <script>
+import {serverUri} from "../config/config.json";
 export default {
   name: "ScoreCardTable",
   data() {
@@ -104,7 +105,6 @@ export default {
       this.getRankData(this.page,this.size)
     },
     getRankData(page=1,size=20) {
-      const serverUri = `http://interchainnfts.dev.sh.bianjie.ai`
       this.$axios.get(`${serverUri}/api/subscribe/challenge-score?page=${page}&size=${size}`).then(res => {
         if (res?.data?.code === 0 && res.data?.data) {
           this.rankDataTotal = res.data.total ;

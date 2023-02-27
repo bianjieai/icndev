@@ -1,3 +1,5 @@
+import config from './config/config.json'
+
 module.exports = {
     title:'Game of NFTs',
     description:'',
@@ -28,5 +30,13 @@ module.exports = {
             global: true,
             process: true
         },
-    }
+    },
+    plugins: [
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': config.GoogleAnalyticsId // UA-00000000-0
+            }
+        ]
+    ]
 }

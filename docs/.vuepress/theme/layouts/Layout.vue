@@ -5,7 +5,7 @@
       <Banner></Banner>
       <how-to-join></how-to-join>
       <Partners></Partners>
-      <judaes></judaes>
+      <judges></judges>
       <news-letter-input></news-letter-input>
     </main>
   </div>
@@ -19,11 +19,11 @@ import Channels from "../../components/Channels.vue";
 import HowToJoin from "../../components/HowToJoin";
 import HomeContent from "../../components/HomeContent";
 import Partners from "../../components/Partners";
-import Judaes from "../../components/Judaes";
+import Judges from "../../components/Judges";
 export default {
   name: "Layout",
   components:{
-    Judaes,
+    Judges,
     Partners,
     HomeContent,
     HowToJoin,

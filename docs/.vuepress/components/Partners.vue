@@ -11,14 +11,14 @@
           </li>
         </ul>
       </div>
-<!--      <div class="partner_institution_content">
+      <div class="partner_institution_content">
         <p class="partner_institution_title">Institution Partners</p>
         <ul class="partner_institution_logo_content">
           <li class="partner_institution_item_logo" v-for="(item,index) in institutionLogos" :key="index">
             <img :src="item.img" alt="">
           </li>
         </ul>
-      </div>-->
+      </div>
       <div class="technology_content">
         <p class="technology_title">Technology Initiator</p>
         <ul class="technology_logo_content">
