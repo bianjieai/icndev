@@ -1,4 +1,5 @@
 const config = require('./config/config.json')
+console.log(config,'config')
 module.exports = {
     title:'Game of NFTs',
     description:'',
