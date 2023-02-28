@@ -29,12 +29,15 @@ export default {
   name: "Header",
   data() {
     return {
-      menuList: [
+      menuList:[],
+      firstMenuList: [
         {
           href: '/gon/',
           label: 'HOME',
           isActive: false
         },
+      ],
+      lastMenuList: [
         {
           href: '/gon/updates.html',
           label: 'UPDATES',
@@ -45,10 +48,10 @@ export default {
     }
   },
   mounted() {
-    console.log(config)
+    this.menuList= this.firstMenuList?.concat(this.lastMenuList)
     if(new Date().getTime() >= config.releaseTime) {
-      this.menuList =[
-        ...this.menuList,
+      this.menuList = [];
+      this.menuList = this.firstMenuList.concat([
         {
           href: '/gon/challengescope.html',
           label: 'CHALLENGE SCOPE',
@@ -58,8 +61,8 @@ export default {
           href: '/gon/scoreboard.html',
           label: 'SCORE CARD',
           isActive: false
-        }
-      ]
+        },
+      ]).concat(this.lastMenuList)
     }
     this.menuList.forEach(item => {
       console.log(this.$route.path)

@@ -107,6 +107,7 @@ export default {
     getRankData(page=1,size=20) {
       this.$axios?.get(`${serverUri}/api/subscribe/challenge-score?page=${page}&size=${size}`).then(res => {
         if (res?.data?.code === 0 && res.data?.data) {
+          this.$emit('updateTime',res.data.data.update_time)
           this.rankDataTotal = res.data.total ;
           this.lastPageNumber = Math.ceil(this.rankDataTotal / this.size)
           this.rankData = res.data.data.score_rank;
