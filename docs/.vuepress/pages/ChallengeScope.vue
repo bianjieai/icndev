@@ -32,6 +32,7 @@ export default {
     margin: 0 auto auto auto;
     .content__default {
       padding: 1.4rem 0;
+      color: rgba(255,255,255,0.5);
       @media(max-width: 1200px){
         padding: 1.4rem 0.2rem;
       }
@@ -94,6 +95,12 @@ export default {
         line-height: 0.34rem;
         letter-spacing: -0.007rem;
         font-family: Inter;
+        code{
+          font-family: Inter;
+        }
+      }
+      ::v-deep li{
+        color: rgba(255,255,255,0.5);
       }
 
     }
