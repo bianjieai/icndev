@@ -65,7 +65,6 @@ export default {
       ]).concat(this.lastMenuList)
     }
     this.menuList.forEach(item => {
-      console.log(this.$route.path)
       if (item.href === this.$route.path) {
         item.isActive = true
       }
@@ -116,7 +115,6 @@ export default {
     }
 
     .header_logo_label {
-      margin-left: 0.12rem;
       font-family: Silom;
     }
 

@@ -55,7 +55,7 @@ export default {
         {
           img:require('../public/judges/JakeHartnell.png'),
           name:'Jake Hartnell',
-          post:'Co-founder,' +
+          post:'Co-founder, ' +
             'Juno/DAO DAO'
         },
         {
