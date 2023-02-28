@@ -42,6 +42,14 @@ export default {
     justify-content: flex-end;
     max-width: 12rem;
     margin:0 auto;
+    @media(max-width: 1200px){
+      box-sizing: border-box;
+      padding: 0 0.36rem;
+    }
+    @media(max-width: 576px){
+      box-sizing: border-box;
+      padding: 0 0.16rem;
+    }
     .update_time_content {
       display: flex;
       align-items: center;
