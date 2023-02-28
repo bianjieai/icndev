@@ -45,6 +45,7 @@ export default {
     }
   },
   mounted() {
+    console.log(config)
     if(new Date().getTime() >= config.releaseTime) {
       this.menuList =[
         ...this.menuList,
