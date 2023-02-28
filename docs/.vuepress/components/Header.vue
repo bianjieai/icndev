@@ -48,6 +48,7 @@ export default {
     }
   },
   mounted() {
+    console.log(config)
     this.menuList= this.firstMenuList?.concat(this.lastMenuList)
     if(new Date().getTime() >= config.releaseTime) {
       this.menuList = [];
