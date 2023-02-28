@@ -20,6 +20,8 @@ Before you start, make sure to check out the rules and requirements on this page
 
 <br/>
 <br/>
+<br/>
+<br/>
 
 ## Overview
 >Please note that this is not the full version and will be supplemented as the game proceeds. You can visit the [GoN GitHub page](https://github.com/game-of-nfts/gon-testnets) for details.
@@ -33,6 +35,7 @@ Testnet infrastructure:
 * Support Services in Cosmos Discord
 * Testnet Faucets
 * Testnet Explorers
+
 <br/>
 
 💬 Event coordinators will be available in the [Cosmos Network Discord](https://discord.gg/cosmosnetwork) #🐇┇gon-testnet channel.
@@ -40,6 +43,8 @@ Testnet infrastructure:
 
 📍 The scorecard page is now available, visit [here](https://interchainnfts.dev/gon/scorecard.html).
 
+<br/>
+<br/>
 <br/>
 
 ## Join & Evidence Submission
@@ -55,6 +60,8 @@ In order to verify the authenticity of identity, ensure fairness of the game, an
 ***Please note that all submissions will be public, so please make sure to create new addresses of test chains to participate in the public testing.***
 
 <br/>
+<br/>
+<br/>
 
 ## Timeline
 The incentivized testing phase has 3 stages with different tasks. Tasks will be revealed gradually as the game progresses.
@@ -63,15 +70,22 @@ The incentivized testing phase has 3 stages with different tasks. Tasks will be 
 Participants can refer to the [installation doc](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/installation.md) to install the client software and the [instruction doc](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/instruction-ics721.md) to get familiar with Interchain NFTs Transfer operations.
 
 <br/>
+<br/>
+<br/>
 
 ## Stage 1: Welcome to GoN
+
+<br/>
+
 ### Duration: Mar 1-3
 * Create Collections and NFTs
 * Perform Interchain NFTs Transfer
+
 <br/>
 
 ### Round 1: Warm-ups
 IRISnet, Stargaze, Juno, Uptick and OmniFlix have prepared their testnets, allowing participants to create their collections and NFTs. These NFTs can be used for the next transfer tasks of the game, marking the first time participants can experience Interchain NFT Transfer.
+
 <br/>
 
 ### Rules:
@@ -93,11 +107,16 @@ IRISnet, Stargaze, Juno, Uptick and OmniFlix have prepared their testnets, allow
 A1,A2,A3,A4,A5,A6
 
 <br/>
+<br/>
+<br/>
 
 ## Point System
+<br/>
+
 ### General Tasks
-General tasks allow participants to fully experience the NFT-transfer functionality. These tasks will be locked once the 3rd stage has begun, participants must submit evidence generated before then (based on the specified block height). 
+General tasks allow participants to fully experience the NFT-transfer functionality. These tasks will be locked once the 3rd stage has begun, participants must submit evidence generated before then (based on the specified block height).
 >Details of flow and flow style in the task description can be found [here](https://github.com/game-of-nfts/gon-testnets/blob/irisnet/gon-testnets/doc/flow-table.md).
+
 <br/>
 
 |Id|Point|Task|Details|Evidence|
@@ -111,9 +130,12 @@ General tasks allow participants to fully experience the NFT-transfer functional
 |...|...|...|...|...|
 
 <br/>
+<br/>
+<br/>
 
 ### Game Tasks
 Coming soon...
+
 <br/>
 
 ### Award
@@ -127,18 +149,23 @@ Coming soon...
 |6|100|Best NFT Memes|Create the most popular NFT memes.|
 |    |...|...|...|
 <br/>
+<br/>
+<br/>
 
 ## Rules
 The Game of NFTs Phase 1 testing aims to provide mainnet-like environments for participants to better understand and become familiar with Interchain NFTs, and identify potential issues. Breaking the rules listed below will result in disqualification.
+
 <br/>
 
 The rules for Game of NFTs Phase 1 are subject to changes at any time through launch, and any changes will be committed here.
+
 <br/>
 
 ### Entry Requirements
 To participate, please note that:
 * Employees of Organizer Teams (IRISnet, Stargaze, Juno, Uptick, OmniFlix) are eligible to participate, but ineligible for rewards.
 * The GitHub account used for testing must be registered for more than one year.
+
 <br/>
 
 ### Disqualification
@@ -146,6 +173,7 @@ The following behavior will result in disqualification from Game of NFTs Phase 1
 * Registering multiple teams in order to win more testnet prizes than you otherwise would.
 * Copying or tampering with any information of other participants to join testing and win rewards.
 * Engaging in any prohibited behavior.
+
 <br/>
 
 ### Prohibited Behavior
@@ -154,6 +182,8 @@ The following behavior will result in disqualification from Game of NFTs Phase 1
 * Social engineering attacks against organizer-operated nodes. This includes but is not limited to phishing, compromising cloud account credentials, malware, and physical security attacks on data centers.
 * Exploiting application-level security vulnerabilities in Cosmos and Tendermint code.
 
+<br/>
+<br/>
 <br/>
 
 ## Acknowledgments
@@ -168,7 +198,3 @@ We are grateful to the individuals and teams who have contributed their time and
 * [Flow Table](https://github.com/game-of-nfts/gon-testnets/blob/irisnet/gon-testnets/doc/flow-table.md)
 * [Channel Table](https://github.com/game-of-nfts/gon-testnets/blob/irisnet/gon-testnets/doc/port-channel-table.md)
 * [Evidence Submission](https://github.com/game-of-nfts/gon-evidence)
-
-
-
-
