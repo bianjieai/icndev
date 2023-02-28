@@ -84,7 +84,7 @@ export default {
           post:'Tech Lead, HashKey Capital'
         },
         {
-          img:require('../public/judges/JeffreyHu.jpg'),
+          img:require('../public/judges/Johanna.jpg'),
           name:'Johanna',
           post:'Associate, IDG Capital'
         },
