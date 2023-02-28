@@ -1,5 +1,4 @@
-import config from './config/config.json'
-
+const config = require('./config/config.json')
 module.exports = {
     title:'Game of NFTs',
     description:'',
