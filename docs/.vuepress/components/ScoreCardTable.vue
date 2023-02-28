@@ -1,11 +1,13 @@
 <template>
   <div class="score_card_table">
-    <vue-scroll :ops="scrollBarConfig">
-      <el-table :data="rankData" :header-row-class-name="'header_style'">
+    <vue-scroll :ops="scrollBarConfig" >
+      <el-table :data="rankData"
+                :row-class-name="tableRowClassName"
+                :header-row-class-name="'header_style'">
         <el-table-column v-for="(item,index) in columnData"
                          :prop="item.prop"
                          :label="item.label"
-                         :min-width="item.width">
+                         :min-width="item.width" >
           <template slot-scope="scope">
             <div class="content_container">
               <img class="rank_first_img" v-show="item.label==='Rank' && scope.row[item.prop] == 1"
@@ -92,6 +94,12 @@ export default {
     this.getRankData(this.page,this.size)
   },
   methods:{
+    tableRowClassName({row, rowIndex}){
+      if(rowIndex % 2) {
+        return 'stripe_style'
+      }
+      return ''
+    },
     toLastPage() {
       this.page=this.lastPageNumber;
       this.getRankData(this.page,this.size)
@@ -211,11 +219,15 @@ export default {
     }
   }
 }
-
+.el-table__row--striped{
+  background: rgba(0,0,0,0.5);
+}
 .el-table::before {
   height: 0;
 }
-
+.el-table .stripe_style {
+  background:rgba(137, 65, 255, 0.2) !important;
+}
 .header_style {
   .el-table__cell {
     background-color: rgba(137, 65, 255, 0.35) !important;
@@ -241,7 +253,6 @@ export default {
     .cell {
       white-space: nowrap;
       padding-right: 0.24rem !important;
-
     }
   }
 }
@@ -256,6 +267,7 @@ export default {
 
 .el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
   border-bottom: none;
+
 }
 
 .el-table--enable-row-hover .el-table__body tr:hover > td {
@@ -265,7 +277,9 @@ export default {
 .el-table .el-table__cell:first-child {
   padding-left: 0.5rem;
 }
-
+.el-table .el-table__cell{
+  min-height: 0.8rem;
+}
 
 .el-table .cell {
   overflow: visible;
@@ -277,6 +291,7 @@ export default {
   position: relative;
   color: rgba(255,255,255,0.82);
   letter-spacing: -0.0053rem;
+  font-size: 0.16rem;
   .ellipsis_style{
     overflow: hidden;
     text-overflow: ellipsis;

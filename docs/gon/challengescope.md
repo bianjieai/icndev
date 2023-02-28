@@ -20,10 +20,20 @@ Before you start, make sure to check out the rules and requirements on this page
 
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## Overview
 >Please note that this is not the full version and will be supplemented as the game proceeds. You can visit the [GoN GitHub page](https://github.com/game-of-nfts/gon-testnets) for details.
-Through the several rounds in phase 1, participants are expected to gain knowledge and build an understanding of Interchain NFTs and help discover interesting attack vectors.
+
+<br/>
+ 
+>Through the several rounds in phase 1, participants are expected to gain knowledge and build an understanding of Interchain NFTs and help discover interesting attack vectors.
+
 <br/>
 
 Testnet infrastructure:
@@ -44,12 +54,15 @@ Testnet infrastructure:
 
 ## Join & Evidence Submission
 According to information provided via the [registration form](https://forms.gle/UCyfH9fjpKLHqWGB9), eligible participants have been invited into [Cosmos Network Discord](https://discord.gg/cosmosnetwork) #🐇┇gon-testnet channel to start coordinating their participation.
+
 <br/>
 
 Before you start testing, please kindly check the join & evidence submission guidance provided at [gon-evidence](https://github.com/game-of-nfts/gon-evidence).
+
 <br/>
 
 In order to verify the authenticity of identity, ensure fairness of the game, and protect participants' rights in receiving points and claiming rewards, please make sure to submit evidence as required.
+
 <br/>
 
 ***Please note that all submissions will be public, so please make sure to create new addresses of test chains to participate in the public testing.***
