@@ -3,7 +3,7 @@
     <div class="header_content">
       <span class="header_logo_label">Game of NFTs</span>
       <ul class="header_menu_list_content">
-        <li class="header_menu_item" v-for="(item,index) in menuList" :key="index"
+        <li class="header_menu_item" v-for="(item,index) in menuListHeader" :key="index"
             :class="item.isActive ? 'active_style' : ''">
           <router-link class="header_item_link" :to="item.href">{{ item.label }}</router-link>
         </li>
@@ -13,7 +13,7 @@
           <img src="../public/menu.png" alt="">
         </div>
         <ul class="mobile_menu_content" v-show="isShowMobileMenu">
-          <li class="mobile_menu_item" v-for="(item,index) in menuList" :key="index"
+          <li class="mobile_menu_item" v-for="(item,index) in menuListHeader" :key="index"
               :class="item.isActive ? 'active_style' : ''">
             <router-link class="mobile_header_item_link" :to="item.href">{{ item.label }}</router-link>
           </li>
@@ -47,30 +47,33 @@ export default {
       isShowMobileMenu:false
     }
   },
-  mounted() {
-    this.menuList= this.firstMenuList?.concat(this.lastMenuList)
-    console.log(new Date().getTime(),'currentDate')
-    console.log(config.releaseTime,'releaseTime')
-    if(new Date().getTime() >= config.releaseTime) {
-      this.menuList = [];
-      this.menuList = this.firstMenuList.concat([
-        {
-          href: '/gon/challengescope.html',
-          label: 'CHALLENGE SCOPE',
-          isActive: false
-        },
-        {
-          href: '/gon/scoreboard.html',
-          label: 'SCORE CARD',
-          isActive: false
-        },
-      ]).concat(this.lastMenuList)
-    }
-    this.menuList.forEach(item => {
-      if (item.href === this.$route.path) {
-        item.isActive = true
+  computed:{
+    menuListHeader() {
+      this.menuList=  this.firstMenuList?.concat(this.lastMenuList)
+      console.log(new Date().getTime(),'currentDate')
+      console.log(config.releaseTime,'releaseTime')
+      if(new Date().getTime() >= config.releaseTime) {
+        this.menuList = [];
+        this.menuList = this.firstMenuList.concat([
+          {
+            href: '/gon/challengescope.html',
+            label: 'CHALLENGE SCOPE',
+            isActive: false
+          },
+          {
+            href: '/gon/scoreboard.html',
+            label: 'SCORE CARD',
+            isActive: false
+          },
+        ]).concat(this.lastMenuList)
       }
-    })
+      this.menuList.forEach(item => {
+        if (item.href === this.$route.path) {
+          item.isActive = true
+        }
+      })
+      return this.menuList
+    }
   },
   methods: {
     showMobileMenu(){
