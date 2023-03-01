@@ -14,6 +14,7 @@
 <br/>
 
 The GoN Incentivized Testing phase is currently underway.
+
 <br/>
 
 Before you start, make sure to check out the rules and requirements on this page.
@@ -29,11 +30,12 @@ Before you start, make sure to check out the rules and requirements on this page
 
 ## Overview
 <br/>
->Please note that this is not the full version and will be supplemented as the game proceeds. You can visit the [GoN GitHub page](https://github.com/game-of-nfts/gon-testnets) for details.
+
+> Please note that this is not the full version and will be supplemented as the game proceeds. You can visit the [GoN GitHub page](https://github.com/game-of-nfts/gon-testnets) for details.
 
 <br/>
  
->Through the several rounds in phase 1, participants are expected to gain knowledge and build an understanding of Interchain NFTs and help discover interesting attack vectors.
+Through the several rounds in phase 1, participants are expected to gain knowledge and build an understanding of Interchain NFTs and help discover interesting attack vectors.
 
 <br/>
 
@@ -44,9 +46,11 @@ Testnet infrastructure:
 * Support Services in Cosmos Discord
 * Testnet Faucets
 * Testnet Explorers
+
 <br/>
 
 💬 Event coordinators will be available in the [Cosmos Network Discord](https://discord.gg/cosmosnetwork) #🐇┇gon-testnet channel.
+
 <br/>
 
 📍 The scorecard page is now available, visit [here](https://interchainnfts.dev/gon/scorecard.html).
@@ -59,6 +63,7 @@ Testnet infrastructure:
 <br/>
 According to information provided via the [registration form](https://forms.gle/UCyfH9fjpKLHqWGB9), eligible participants have been invited into [Cosmos Network Discord](https://discord.gg/cosmosnetwork) #🐇┇gon-testnet channel to start coordinating their participation.
 
+<br/>
 <br/>
 
 Before you start testing, please kindly check the join & evidence submission guidance provided at [gon-evidence](https://github.com/game-of-nfts/gon-evidence).
@@ -79,6 +84,7 @@ In order to verify the authenticity of identity, ensure fairness of the game, an
 <br/>
 
 The incentivized testing phase has 3 stages with different tasks. Tasks will be revealed gradually as the game progresses.
+
 <br/>
 
 Participants can refer to the [installation doc](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/installation.md) to install the client software and the [instruction doc](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/instruction-ics721.md) to get familiar with Interchain NFTs Transfer operations.
