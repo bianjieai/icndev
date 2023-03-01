@@ -99,7 +99,7 @@ export default {
     padding: 0.26rem 0;
     display: flex;
     align-items: center;
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
 
       max-width: none;
       justify-content: space-between;
@@ -122,7 +122,7 @@ export default {
       display: flex;
       gap: 0.6rem;
       margin: 0 0 0 0.75rem;
-      @media(max-width: 800px){
+      @media(max-width: 850px){
         display: none;
       }
       .header_menu_item {
@@ -154,7 +154,7 @@ export default {
       display: none;
       position: relative;
       justify-content: flex-end;
-      @media(max-width: 800px){
+      @media(max-width: 850px){
         display: inline-block;
       }
       .mobile_menu_icon{

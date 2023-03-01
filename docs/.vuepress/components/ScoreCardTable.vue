@@ -137,7 +137,14 @@ export default {
   max-width: 12rem;
   margin: 0.16rem auto auto auto;
   padding-bottom: 1.2rem;
-
+  @media(max-width: 1200px){
+    box-sizing: border-box;
+    padding: 0 0.36rem;
+  }
+  @media(max-width: 576px){
+    box-sizing: border-box;
+    padding: 0 0.16rem;
+  }
   .pagination_content {
     width: 100%;
     max-width: 12rem;
