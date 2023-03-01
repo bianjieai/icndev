@@ -66,22 +66,22 @@ export default {
         {
           prop: 'rank',
           label: 'Rank',
-          width: '14%'
+          width: '168'
         },
         {
           prop: 'team_name',
           label: 'Team Name',
-          width: '25%'
+          width: '300'
         },
         {
           prop: 'task_completed',
           label: 'Task Completed',
-          width: '39%'
+          width: '468'
         },
         {
           prop: 'final_score',
           label: 'Final Score ',
-          width: '15%'
+          width: '180'
         }
       ],
       rankDataTotal:0,
@@ -244,7 +244,7 @@ export default {
       font-weight: bold;
       color: #FFFFFF;
       line-height: 0.34rem;
-
+      white-space: nowrap;
     }
   }
 
