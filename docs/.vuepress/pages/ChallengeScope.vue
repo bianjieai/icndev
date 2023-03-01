@@ -32,8 +32,14 @@ export default {
     margin: 0 auto auto auto;
     .content__default {
       padding: 1.4rem 0;
+      color: rgba(255,255,255,0.82);
+      overflow-x: auto;
+      font-size: 0.21rem;
       @media(max-width: 1200px){
         padding: 1.4rem 0.2rem;
+      }
+      ::v-deep a {
+        color: rgba(158, 99, 255, 1);
       }
       ::v-deep h3{
         color: #fff;
@@ -77,7 +83,7 @@ export default {
       ::v-deep p{
         font-size: 0.21rem;
         font-weight: 400;
-        color: rgba(255,255,255,0.5);
+        color: rgba(255,255,255,0.82);
         line-height: 0.34rem;
         letter-spacing: -0.007rem;
         b{
@@ -90,12 +96,57 @@ export default {
       ::v-deep pre{
         font-size: 0.21rem;
         font-weight: 400;
-        color: rgba(255,255,255,0.5);
+        color: rgba(255,255,255,0.82);
         line-height: 0.34rem;
         letter-spacing: -0.007rem;
         font-family: Inter;
+        code{
+          font-family: Inter;
+        }
       }
+      ::v-deep blockquote{
+        padding: 0 1em;
+        color: var(--color-fg-muted);
+        border-left: 0.25em solid #30363d;
+      }
+      ::v-deep ul {
+        padding-left: 0.4rem;
+      }
+      ::v-deep li{
+        font-size: 0.21rem;
+        font-weight: 400;
+        color: rgba(255,255,255,0.82);
+        line-height: 0.34rem;
+        letter-spacing: -0.007rem;
+        list-style: inherit;
+      }
+      ::v-deep table {
+        margin-top: 0.2rem;
+        thead{
+          tr{
+            border: 0.01rem solid rgba(255,255,255,0.82);
+            th{
+              border: 0.01rem solid rgba(255,255,255,0.82);
+              padding: 0.2rem;
+              @media(max-width: 768px){
+                padding: 0.1rem;
+              }
+            }
+          }
+        }
 
+        tbody {
+          tr {
+            td{
+              border: 0.01rem solid rgba(255,255,255,0.82);
+              padding: 0.2rem;
+              @media(max-width: 768px){
+                padding: 0.1rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

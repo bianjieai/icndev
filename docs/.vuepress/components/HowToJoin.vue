@@ -2,26 +2,23 @@
   <div class="register_container">
     <div class="bg_left_style"></div>
     <div class="register_content">
-      <div class="register_title">Phase 1 Incentivized Testnets</div>
-      <div class="open_for_registration">Open for Registration</div>
+      <div class="register_title">Phase 1 Incentivized Testing</div>
+      <div class="open_for_registration">Open for Evidence Submission</div>
       <div class="register_content_wrap">
         <div class="register_content_left">
-          <p>Game of NFTs (GoN) is an event with public incentivized testnets and a hackathon where you can test the
-            Interchain NFTs and build your NFT applications.</p>
-          <p>The registration for Phase 1 of Game of NFTs - Incentivized Testnets - is now open! <b style="color: #fff">20,000
-            ATOMs</b> will go to Phase 1 winners. Check out more details on the <a style="color: #9E63FF"
-                                                                                   href="https://github.com/bianjieai/gon-testnets"
-                                                                                   target="_blank"
-                                                                                   rel="noreferrer noopener">Github</a>
-            page and register now!</p>
+          <p>Game of NFTs (GoN) is a two-phase event with public incentivized testing and a hackathon where you can test the Interchain NFTs and build innovative NFT applications.</p>
+          <p>The testing phase has kicked off and will continue for the next few weeks. You can find the rules, requirements, and detailed tasks on the <a style="color: #9E63FF"
+                                                                                                                                                          href="https://github.com/bianjieai/gon-testnets"
+                                                                                                                                                          target="_blank"
+                                                                                                                                                          rel="noreferrer noopener">GoN GitHub page</a>. Enjoy your testing and compete for rewards!</p>
         </div>
         <div class="register_content_right">
           <div class="register_content_img_content">
             <img src="../public/register_bg.png" alt="">
             <div class="register_button_content">
-              <div class="register_button_label">Register Now</div>
-              <div class="register_sign_up_label">Fill out the form to sign up!</div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIhkXzOUTNu5R2cueCSt-_0Dic4MdsF193I9GSx64YTqNyWw/viewform?usp=sf_link" rel="noreferrer noopener" class="register_button" target="_blank">Register</a>
+              <div class="register_button_label">View Tasks</div>
+              <div class="register_sign_up_label">Check out the complete testing rules</div>
+              <a href="https://interchainnfts.dev/gon/challenge-scope.html" rel="noreferrer noopener" class="register_button" target="_blank">Challenge Scope</a>
             </div>
           </div>
         </div>

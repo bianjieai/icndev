@@ -1,3 +1,5 @@
 {
-  "serverUri": "${serverUri}"
+  "serverUri": "${serverUri}",
+  "GoogleAnalyticsId": "${GoogleAnalyticsId}",
+  "releaseTime": "${releaseTime}"
 }

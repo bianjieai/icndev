@@ -3,7 +3,7 @@
     <div class="header_content">
       <span class="header_logo_label">Game of NFTs</span>
       <ul class="header_menu_list_content">
-        <li class="header_menu_item" v-for="(item,index) in menuList" :key="index"
+        <li class="header_menu_item" v-for="(item,index) in menuListHeader" :key="index"
             :class="item.isActive ? 'active_style' : ''">
           <router-link class="header_item_link" :to="item.href">{{ item.label }}</router-link>
         </li>
@@ -13,7 +13,7 @@
           <img src="../public/menu.png" alt="">
         </div>
         <ul class="mobile_menu_content" v-show="isShowMobileMenu">
-          <li class="mobile_menu_item" v-for="(item,index) in menuList" :key="index"
+          <li class="mobile_menu_item" v-for="(item,index) in menuListHeader" :key="index"
               :class="item.isActive ? 'active_style' : ''">
             <router-link class="mobile_header_item_link" :to="item.href">{{ item.label }}</router-link>
           </li>
@@ -24,16 +24,20 @@
 </template>
 
 <script>
+import config from "../config/config.json"
 export default {
   name: "Header",
   data() {
     return {
-      menuList: [
+      menuList:[],
+      firstMenuList: [
         {
           href: '/gon/',
           label: 'HOME',
           isActive: false
         },
+      ],
+      lastMenuList: [
         {
           href: '/gon/updates.html',
           label: 'UPDATES',
@@ -43,28 +47,31 @@ export default {
       isShowMobileMenu:false
     }
   },
-  mounted() {
-    if(new Date().getTime() >= 1677650400000) {
-      this.menuList =[
-        ...this.menuList,
-        {
-          href: '/gon/challengescope.html',
-          label: 'CHALLENGE SCOPE',
-          isActive: false
-        },
-        {
-          href: '/gon/scoreboard.html',
-          label: 'SCORE CARD',
-          isActive: false
-        }
-      ]
-    }
-    this.menuList.forEach(item => {
-      console.log(this.$route.path)
-      if (item.href === this.$route.path) {
-        item.isActive = true
+  computed:{
+    menuListHeader() {
+      this.menuList=  this.firstMenuList?.concat(this.lastMenuList)
+      if(new Date().getTime() >= config.releaseTime) {
+        this.menuList = [];
+        this.menuList = this.firstMenuList.concat([
+          {
+            href: '/gon/challengescope.html',
+            label: 'CHALLENGE SCOPE',
+            isActive: false
+          },
+          {
+            href: '/gon/scoreboard.html',
+            label: 'SCORE CARD',
+            isActive: false
+          },
+        ]).concat(this.lastMenuList)
       }
-    })
+      this.menuList.forEach(item => {
+        if (item.href === this.$route.path) {
+          item.isActive = true
+        }
+      })
+      return this.menuList
+    }
   },
   methods: {
     showMobileMenu(){
@@ -95,7 +102,7 @@ export default {
     padding: 0.26rem 0;
     display: flex;
     align-items: center;
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
 
       max-width: none;
       justify-content: space-between;
@@ -111,7 +118,6 @@ export default {
     }
 
     .header_logo_label {
-      margin-left: 0.12rem;
       font-family: Silom;
     }
 
@@ -119,7 +125,7 @@ export default {
       display: flex;
       gap: 0.6rem;
       margin: 0 0 0 0.75rem;
-      @media(max-width: 800px){
+      @media(max-width: 850px){
         display: none;
       }
       .header_menu_item {
@@ -151,7 +157,7 @@ export default {
       display: none;
       position: relative;
       justify-content: flex-end;
-      @media(max-width: 800px){
+      @media(max-width: 850px){
         display: inline-block;
       }
       .mobile_menu_icon{

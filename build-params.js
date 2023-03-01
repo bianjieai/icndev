@@ -13,6 +13,8 @@ replaceEnv([
     ],
     {
       "serverUri": program.P[0],
+      "GoogleAnalyticsId": program.P[1],
+      "releaseTime": program.P[2],
     }
 );
 

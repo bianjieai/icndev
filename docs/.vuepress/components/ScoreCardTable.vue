@@ -1,11 +1,13 @@
 <template>
   <div class="score_card_table">
-    <vue-scroll :ops="scrollBarConfig">
-      <el-table :data="rankData" :header-row-class-name="'header_style'">
+    <vue-scroll :ops="scrollBarConfig" >
+      <el-table :data="rankData"
+                :row-class-name="tableRowClassName"
+                :header-row-class-name="'header_style'">
         <el-table-column v-for="(item,index) in columnData"
                          :prop="item.prop"
                          :label="item.label"
-                         :min-width="item.width">
+                         :min-width="item.width" >
           <template slot-scope="scope">
             <div class="content_container">
               <img class="rank_first_img" v-show="item.label==='Rank' && scope.row[item.prop] == 1"
@@ -34,6 +36,7 @@
 </template>
 
 <script>
+import {serverUri} from "../config/config.json";
 export default {
   name: "ScoreCardTable",
   data() {
@@ -91,6 +94,12 @@ export default {
     this.getRankData(this.page,this.size)
   },
   methods:{
+    tableRowClassName({row, rowIndex}){
+      if(rowIndex % 2) {
+        return 'stripe_style'
+      }
+      return ''
+    },
     toLastPage() {
       this.page=this.lastPageNumber;
       this.getRankData(this.page,this.size)
@@ -104,9 +113,9 @@ export default {
       this.getRankData(this.page,this.size)
     },
     getRankData(page=1,size=20) {
-      const serverUri = `http://interchainnfts.dev.sh.bianjie.ai`
-      this.$axios.get(`${serverUri}/api/subscribe/challenge-score?page=${page}&size=${size}`).then(res => {
+      this.$axios?.get(`${serverUri}/api/subscribe/challenge-score?page=${page}&size=${size}`).then(res => {
         if (res?.data?.code === 0 && res.data?.data) {
+          this.$emit('updateTime',res.data.data.update_time)
           this.rankDataTotal = res.data.total ;
           this.lastPageNumber = Math.ceil(this.rankDataTotal / this.size)
           this.rankData = res.data.data.score_rank;
@@ -128,7 +137,14 @@ export default {
   max-width: 12rem;
   margin: 0.16rem auto auto auto;
   padding-bottom: 1.2rem;
-
+  @media(max-width: 1200px){
+    box-sizing: border-box;
+    padding: 0 0.36rem;
+  }
+  @media(max-width: 576px){
+    box-sizing: border-box;
+    padding: 0 0.16rem;
+  }
   .pagination_content {
     width: 100%;
     max-width: 12rem;
@@ -210,11 +226,15 @@ export default {
     }
   }
 }
-
+.el-table__row--striped{
+  background: rgba(0,0,0,0.5);
+}
 .el-table::before {
   height: 0;
 }
-
+.el-table .stripe_style {
+  background:rgba(137, 65, 255, 0.2) !important;
+}
 .header_style {
   .el-table__cell {
     background-color: rgba(137, 65, 255, 0.35) !important;
@@ -240,7 +260,6 @@ export default {
     .cell {
       white-space: nowrap;
       padding-right: 0.24rem !important;
-
     }
   }
 }
@@ -255,6 +274,7 @@ export default {
 
 .el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
   border-bottom: none;
+
 }
 
 .el-table--enable-row-hover .el-table__body tr:hover > td {
@@ -264,7 +284,9 @@ export default {
 .el-table .el-table__cell:first-child {
   padding-left: 0.5rem;
 }
-
+.el-table .el-table__cell{
+  min-height: 0.8rem;
+}
 
 .el-table .cell {
   overflow: visible;
@@ -276,6 +298,7 @@ export default {
   position: relative;
   color: rgba(255,255,255,0.82);
   letter-spacing: -0.0053rem;
+  font-size: 0.16rem;
   .ellipsis_style{
     overflow: hidden;
     text-overflow: ellipsis;
