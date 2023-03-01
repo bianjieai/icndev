@@ -61,7 +61,8 @@ Testnet infrastructure:
 
 ## Join & Evidence Submission
 <br/>
-According to information provided via the [registration form](https://forms.gle/UCyfH9fjpKLHqWGB9), eligible participants have been invited into [Cosmos Network Discord](https://discord.gg/cosmosnetwork) #🐇┇gon-testnet channel to start coordinating their participation.
+
+According to information provided via the [registration form](https://forms.gle/UCyfH9fjpKLHqWGB9) , eligible participants have been invited into [Cosmos Network Discord](https://discord.gg/cosmosnetwork) #🐇┇gon-testnet channel to start coordinating their participation.
 
 <br/>
 <br/>
