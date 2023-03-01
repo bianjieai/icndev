@@ -50,8 +50,6 @@ export default {
   computed:{
     menuListHeader() {
       this.menuList=  this.firstMenuList?.concat(this.lastMenuList)
-      console.log(new Date().getTime(),'currentDate')
-      console.log(config.releaseTime,'releaseTime')
       if(new Date().getTime() >= config.releaseTime) {
         this.menuList = [];
         this.menuList = this.firstMenuList.concat([

@@ -23,11 +23,9 @@ export default {
   },
   computed: {
     isShowChallengeScope() {
-      console.log(this.$page.title,'ChallengesScope')
       return this.$page.title==='ChallengesScope'&& new Date().getTime() >= config.releaseTime
     },
     isShowScoreCard() {
-      console.log(this.$page.title,'ScoreCard')
       return this.$page.title==='ScoreCard' && new Date().getTime() >= config.releaseTime
     }
   }
