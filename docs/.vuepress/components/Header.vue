@@ -59,7 +59,7 @@ export default {
             isActive: false
           },
           {
-            href: '/gon/scoreboard.html',
+            href: '/gon/scorecard.html',
             label: 'SCORE CARD',
             isActive: false
           },

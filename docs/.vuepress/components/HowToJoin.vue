@@ -18,7 +18,7 @@
             <div class="register_button_content">
               <div class="register_button_label">View Tasks</div>
               <div class="register_sign_up_label">Check out the complete testing rules</div>
-              <a href="https://interchainnfts.dev/gon/challenge-scope.html" rel="noreferrer noopener" class="register_button" target="_blank">Challenge Scope</a>
+              <a href="https://interchainnfts.dev/gon/challengescope.html" rel="noreferrer noopener" class="register_button" target="_blank">Challenge Scope</a>
             </div>
           </div>
         </div>
