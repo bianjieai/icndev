@@ -10,8 +10,8 @@
                          :min-width="item.width" >
           <template slot-scope="scope">
             <div class="content_container">
-              <img class="rank_first_img" v-show="item.label==='Rank' && scope.row[item.prop] == 1"
-                   src="../public/scoreCard/star.png" alt="">
+<!--              <img class="rank_first_img" v-show="item.label==='Rank' && scope.row[item.prop] == 1"
+                   src="../public/scoreCard/star.png" alt="">-->
               <span :class="item.label === 'Team Name'? 'ellipsis_style' : ''">{{ scope.row[item.prop] }}</span>
             </div>
           </template>
