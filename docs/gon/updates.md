@@ -5,6 +5,13 @@
     "layout": "PageLayout",
     "updateList":[
         {
+            "title": "[Blog] Game of NFTs Incentivized Testing Kicks Off!",
+            "desc": "This blogpost announces the start of the Game of NFTs phase 1 incentivized testing, and released rules and requirements with more details",
+            "author":"IRISnet",
+            "time": "Mar 1, 2023",
+            "href": "https://blog.cosmos.network/game-of-nfts-incentivized-testing-kicks-off-c4ce529b4922",
+        },
+        {
             "title": "[Blog] Announcing Game of NFTs - Incentivized Testnet is Open for Registration!",
             "desc": "This blogpost announces the start of registration for GoN phase 1 incentivized testing, and provides an overall introduction to this event.",
             "author":"IRISnet",
