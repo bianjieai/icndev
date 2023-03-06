@@ -98,7 +98,7 @@ Participants can refer to the [installation doc](https://github.com/game-of-nfts
 <br/>
 <br/>
 
-## Stage 1: Welcome to GoN
+### Stage 1: Welcome to GoN
 
 <br/>
 
@@ -108,12 +108,12 @@ Participants can refer to the [installation doc](https://github.com/game-of-nfts
 
 <br/>
 
-### Round 1: Warm-ups
+#### Round 1: Warm-ups
 IRISnet, Stargaze, Juno, Uptick and OmniFlix have prepared their testnets, allowing participants to create their collections and NFTs. These NFTs can be used for the next transfer tasks of the game, marking the first time participants can experience Interchain NFT Transfer.
 
 <br/>
 
-### Rules:
+#### Rules:
 * Participant issue their own classes and must set class data as the JSON string below
 * This allows participants to bind their classes(collections, denoms) to their GitHub account and prove that they have control over the class owner
 * All the following tasks related to NFT transfer must be minted under their classes
@@ -128,12 +128,12 @@ IRISnet, Stargaze, Juno, Uptick and OmniFlix have prepared their testnets, allow
 ```
 <br/>
 
-### Tasks:
+#### Tasks:
 A1,A2,A3,A4,A5,A6
 
 <br/>
 
-## Stage 2: Let's Dive into Interchain NFTs Transfer
+### Stage 2: Let's Dive into Interchain NFTs Transfer
 
 <br/>
 
@@ -142,12 +142,12 @@ A1,A2,A3,A4,A5,A6
 
 <br/>
 
-### Round 2: Journey for One
+#### Round 2: Journey for One
 Participants complete Interchain NFTs Transfer independently, which means they need to perform operations using their own account addresses on each chain. For each task, participants should start transferring with a different NFT. As a result, they need to create multiple NFTs under their collections.
 
 <br/>
 
-### Rules:
+#### Rules:
 * Each NFT can only be used as evidence once for tasks in Round 2.
 * Participants must use NFT minted under classes/denoms they issued in Round 1.
 * Participants must use their own account addresses provided at the registration stage.
@@ -155,12 +155,12 @@ Participants complete Interchain NFTs Transfer independently, which means they n
 
 <br/>
 
-### Tasks:
+#### Tasks:
 A7~A20
 
 <br/>
 
-## Stage 3: Enjoy the Carnival of GoN
+### Stage 3: Enjoy the Carnival of GoN
 
 <br/>
 
@@ -193,7 +193,7 @@ General tasks allow participants to fully experience the NFT-transfer functional
 |A3|1|Transfer an NFT from IRISnet to Juno or Stargaze|The NFT must be the one created in A2|TxHash on IRISnet<br>Destination Chain-ID<br>Contract-Addr +NFTID|
 |A4|1|Transfer an NFT from IRISnet to Uptick or OmniFlix|The NFT must be the one created in A2|TxHash on IRISnet<br>Destination Chain-ID<br>IBC-ClassID+NFTID|
 |A5|1|Transfer the NFT on Stargaze or Juno back to IRISnet|The NFT must be the one transferred in A3<br>Transfer back through the same channel in A3|TxHash on Stargaze/Juno<br>Chain-ID|
-|A6|1|Transfer the NFT on Uptick or OmniFlix<br>back to IRISnet|The NFT must be the one transferred in A4<br>Transfer back through the same channel in A4|TxHash on Uptick/OmniFlix<br>Chain-ID|
+|A6|1|Transfer the NFT on Uptick or OmniFlix back to IRISnet|The NFT must be the one transferred in A4<br>Transfer back through the same channel in A4|TxHash on Uptick/OmniFlix<br>Chain-ID|
 |A7|2|Perform cross-chain NFT transfer as flow-a1|Transfer in a never-go-back style.|ClassID + NFTID|
 |A8|2|Perform cross-chain NFT transfer as flow-a2|Transfer in a never-go-back style.|ClassID + NFTID|
 |A9|2|Perform cross-chain NFT transfer as flow-a3|Transfer in a never-go-back style.|ClassID + NFTID|
