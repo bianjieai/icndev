@@ -27,7 +27,7 @@ export default {
   methods:{
     getUpdateTime(time){
       if(time){
-        this.updateTime = dayjs().format('DD/MM/YYYY');
+        this.updateTime = dayjs(time * 1000).format('DD/MM/YYYY');
       }
     }
   }
