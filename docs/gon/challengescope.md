@@ -5,6 +5,7 @@
 ---
 
 #### GoN Challenge Scope
+
 <br/>
 
 # Incentivized
@@ -29,6 +30,7 @@ Before you start, make sure to check out the rules and requirements on this page
 <br/>
 
 ## Overview
+
 <br/>
 
 > Please note that this is not the full version and will be supplemented as the game proceeds. You can visit the [GoN GitHub page](https://github.com/game-of-nfts/gon-testnets) for details.
@@ -60,6 +62,7 @@ Testnet infrastructure:
 <br/>
 
 ## Join & Evidence Submission
+
 <br/>
 
 According to information provided via the [registration form](https://forms.gle/UCyfH9fjpKLHqWGB9) , eligible participants have been invited into [Cosmos Network Discord](https://discord.gg/cosmosnetwork) #🐇┇gon-testnet channel to start coordinating their participation.
@@ -82,6 +85,7 @@ In order to verify the authenticity of identity, ensure fairness of the game, an
 <br/>
 
 ## Timeline
+
 <br/>
 
 The incentivized testing phase has 3 stages with different tasks. Tasks will be revealed gradually as the game progresses.
@@ -94,22 +98,22 @@ Participants can refer to the [installation doc](https://github.com/game-of-nfts
 <br/>
 <br/>
 
-## Stage 1: Welcome to GoN
+### Stage 1: Welcome to GoN
 
 <br/>
 
-### Duration: Mar 1-3
+**Start from Mar 1**
 * Create Collections and NFTs
 * Perform Interchain NFTs Transfer
 
 <br/>
 
-### Round 1: Warm-ups
+#### Round 1: Warm-ups
 IRISnet, Stargaze, Juno, Uptick and OmniFlix have prepared their testnets, allowing participants to create their collections and NFTs. These NFTs can be used for the next transfer tasks of the game, marking the first time participants can experience Interchain NFT Transfer.
 
 <br/>
 
-### Rules:
+#### Rules:
 * Participant issue their own classes and must set class data as the JSON string below
 * This allows participants to bind their classes(collections, denoms) to their GitHub account and prove that they have control over the class owner
 * All the following tasks related to NFT transfer must be minted under their classes
@@ -124,19 +128,61 @@ IRISnet, Stargaze, Juno, Uptick and OmniFlix have prepared their testnets, allow
 ```
 <br/>
 
-### Tasks:
+#### Tasks:
 A1,A2,A3,A4,A5,A6
+
+<br/>
+
+### Stage 2: Let's Dive into Interchain NFTs Transfer
+
+<br/>
+
+**Start from Mar 6**
+* Perform Interchain NFT Transfer through different flows
+
+<br/>
+
+#### Round 2: Journey for One
+Participants complete Interchain NFTs Transfer independently, which means they need to perform operations using their own account addresses on each chain. For each task, participants should start transferring with a different NFT. As a result, they need to create multiple NFTs under their collections.
+
+<br/>
+
+#### Rules:
+* Each NFT can only be used as evidence once for tasks in Round 2.
+* Participants must use NFT minted under classes/denoms they issued in Round 1.
+* Participants must use their own account addresses provided at the registration stage.
+* Flow can be queried off-chain with flow-id.
+
+<br/>
+
+#### Tasks:
+A7~A20
+
+<br/>
+
+### Stage 3: Enjoy the Carnival of GoN
+
+<br/>
+
+**Expected to start from Mar 13**
+* Competitive race game
+* Quiz game
+
+<br/>
+
+In addition to tasks, there will be contributor awards for rewarding community-contributed content and tools, i.e, auditing services, public goods, community supports, NFT memes.
 
 <br/>
 <br/>
 <br/>
 
 ## Point System
+
 <br/>
 
 ### General Tasks
 General tasks allow participants to fully experience the NFT-transfer functionality. These tasks will be locked once the 3rd stage has begun, participants must submit evidence generated before then (based on the specified block height).
->Details of flow and flow style in the task description can be found [here](https://github.com/game-of-nfts/gon-testnets/blob/irisnet/gon-testnets/doc/flow-table.md).
+> Details of flow and flow style in the task description can be found [here](https://github.com/game-of-nfts/gon-testnets/blob/irisnet/gon-testnets/doc/flow-table.md).
 
 <br/>
 
@@ -147,7 +193,21 @@ General tasks allow participants to fully experience the NFT-transfer functional
 |A3|1|Transfer an NFT from IRISnet to Juno or Stargaze|The NFT must be the one created in A2|TxHash on IRISnet<br>Destination Chain-ID<br>Contract-Addr +NFTID|
 |A4|1|Transfer an NFT from IRISnet to Uptick or OmniFlix|The NFT must be the one created in A2|TxHash on IRISnet<br>Destination Chain-ID<br>IBC-ClassID+NFTID|
 |A5|1|Transfer the NFT on Stargaze or Juno back to IRISnet|The NFT must be the one transferred in A3<br>Transfer back through the same channel in A3|TxHash on Stargaze/Juno<br>Chain-ID|
-|A6|1|Transfer the NFT on Uptick or OmniFlix<br>back to IRISnet|The NFT must be the one transferred in A4<br>Transfer back through the same channel in A4|TxHash on Uptick/OmniFlix<br>Chain-ID|
+|A6|1|Transfer the NFT on Uptick or OmniFlix back to IRISnet|The NFT must be the one transferred in A4<br>Transfer back through the same channel in A4|TxHash on Uptick/OmniFlix<br>Chain-ID|
+|A7|2|Perform cross-chain NFT transfer as flow-a1|Transfer in a never-go-back style.|ClassID + NFTID|
+|A8|2|Perform cross-chain NFT transfer as flow-a2|Transfer in a never-go-back style.|ClassID + NFTID|
+|A9|2|Perform cross-chain NFT transfer as flow-a3|Transfer in a never-go-back style.|ClassID + NFTID|
+|A10|2|Perform cross-chain NFT transfer as flow-a4|Transfer in a never-go-back style.|ClassID + NFTID|
+|A11|3|Perform cross-chain NFT transfer as flow-a5|Transfer in a never-go-back style.|ClassID + NFTID|
+|A12|3|Perform cross-chain NFT transfer as flow-a6|Transfer in a never-go-back style.|ClassID + NFTID|
+|A13|2|Perform cross-chain NFT transfer as flow-b1|Transfer in a revisit style.|Every NFT-Transfer TxHash and Chain ID|
+|A14|2|Perform cross-chain NFT transfer as flow-b2|Transfer in a revisit style.|Every NFT-Transfer TxHash and Chain ID|
+|A15|2|Perform cross-chain NFT transfer as flow-b3|Transfer in a revisit style.|Every NFT-Transfer TxHash and Chain ID|
+|A16|2|Perform cross-chain NFT transfer as flow-b4|Transfer in a revisit style.|Every NFT-Transfer TxHash and Chain ID|
+|A17|2|Perform cross-chain NFT transfer as flow-c1|Transfer in a backtrack style.|Every NFT-Transfer TxHash and Chain ID|
+|A18|2|Perform cross-chain NFT transfer as flow-c2|Transfer in a backtrack style.|Every NFT-Transfer TxHash and Chain ID|
+|A19|3|Perform cross-chain NFT transfer as flow-c3|Transfer in a backtrack style.|Every NFT-Transfer TxHash and Chain ID|
+|A20|3|Perform cross-chain NFT transfer as flow-c4|Transfer in a backtrack style.|Every NFT-Transfer TxHash and Chain ID|
 |...|...|...|...|...|
 
 <br/>
@@ -169,11 +229,13 @@ Coming soon...
 |5|200|Bug Hunters|Find bugs that affect the functionality of ICS-721. At most five.|
 |6|100|Best NFT Memes|Create the most popular NFT memes.|
 |    |...|...|...|
+
 <br/>
 <br/>
 <br/>
 
 ## Rules
+
 <br/>
 
 The Game of NFTs Phase 1 testing aims to provide mainnet-like environments for participants to better understand and become familiar with Interchain NFTs, and identify potential issues. Breaking the rules listed below will result in disqualification.
