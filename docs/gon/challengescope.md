@@ -214,7 +214,7 @@ B1, B2, B3, B4
 <br/>
 
 ### General Tasks
-General tasks allow participants to fully experience the NFT-transfer functionality. The deadline for the general task submissions (stage 1&2) originally due on the 13th will be extended to around 27th, considering that more testing would be better.Participants must submit evidence generated before then (based on the specified block height). Details of flow and flow style in the task description can be found [here](./doc/flow-table.md).
+General tasks allow participants to fully experience the NFT-transfer functionality. The deadline for the general task submissions (stage 1&2) originally due on the 13th will be extended to around 27th, considering that more testing would be better. Participants must submit evidence generated before then (based on the specified block height). Details of flow and flow style in the task description can be found [here](./doc/flow-table.md).
 
 <br/>
 
@@ -240,7 +240,6 @@ General tasks allow participants to fully experience the NFT-transfer functional
 |A18|2|Perform cross-chain NFT transfer as flow-c2|Transfer in a backtrack style.|Every NFT-Transfer TxHash and Chain ID|
 |A19|3|Perform cross-chain NFT transfer as flow-c3|Transfer in a backtrack style.|Every NFT-Transfer TxHash and Chain ID|
 |A20|3|Perform cross-chain NFT transfer as flow-c4|Transfer in a backtrack style.|Every NFT-Transfer TxHash and Chain ID|
-|...|...|...|...|...|
 
 <br/>
 <br/>
