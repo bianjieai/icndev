@@ -185,7 +185,7 @@ The first round airdrop will start at around 2023-03-15-06:00 UTC, and the secon
   "type": "individual race round",
   "flow": "the flow id, check flow with flow-id on https://github.com/game-of-nfts/gon-testnets/blob/main/doc/flow-table.md",
   "last_owner": "the ultimate owner of this NFT",
-  "start_height": "transfer before this height are considered valid"
+  "start_height": "transfer before this height are considered invalid"
 }
 ```
 
