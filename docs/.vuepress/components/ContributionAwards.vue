@@ -70,11 +70,11 @@ export default {
   padding-bottom: 1.2rem;
   @media(max-width: 1200px){
     box-sizing: border-box;
-    padding: 0 0.36rem;
+    padding: 0 0.36rem 1.2rem;
   }
   @media(max-width: 576px){
     box-sizing: border-box;
-    padding: 0 0.16rem;
+    padding: 0 0.16rem 0.6rem;
   }
   .awards_title{
     font-size: 0.28rem;
