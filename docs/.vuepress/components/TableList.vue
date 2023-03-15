@@ -25,12 +25,26 @@ export default {
   props:{
     tableData:{
       type: Array,
-      default:() => []
     },
     columnData:{
       type: Array,
-      default:() => []
     }
+  },
+  data() {
+    return {
+      tableList:[]
+    }
+  },
+  watch:{
+    tableData:{
+      handler(newValue) {
+        this.tableList = newValue
+      },
+      deep: true
+    }
+  },
+  mounted() {
+    this.tableList = this.tableData
   },
   methods:{
     tableRowClassName({row, rowIndex}) {
