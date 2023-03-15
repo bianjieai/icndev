@@ -4,7 +4,7 @@
       <el-table :data="rankData"
                 :row-class-name="tableRowClassName"
                 :header-row-class-name="'header_style'"
-                empty-text="No Data">
+                :empty-text="rankData.length ? 'No Data' : ''">
         <el-table-column v-for="(item,index) in columnData"
                          :prop="item.prop"
                          :label="item.label"
@@ -251,7 +251,7 @@ export default {
   background: rgba(137, 65, 255, 0.2) !important;
 }
 .el-table .light_Style {
-  background: rgba(137, 65, 255, 1) !important;
+  background: rgba(137, 65, 255, 0.5) !important;
   .el-table__cell{
     .cell{
       .content_container{
