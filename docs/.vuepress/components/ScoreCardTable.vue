@@ -3,8 +3,7 @@
     <vue-scroll :ops="scrollBarConfig">
       <el-table :data="rankData"
                 :row-class-name="tableRowClassName"
-                :header-row-class-name="'header_style'"
-                :empty-text="rankData.length ? 'No Data' : ''">
+                :header-row-class-name="'header_style'">
         <el-table-column v-for="(item,index) in columnData"
                          :prop="item.prop"
                          :label="item.label"

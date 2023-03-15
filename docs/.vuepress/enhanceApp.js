@@ -4,7 +4,7 @@ import vuescroll from "vuescroll";
 import iconfont from "./public/iconfont/iconfont.css"
 import locale from 'element-ui/lib/locale/lang/en'
 export default async ({Vue,isServer,router}) => {
-    Vue.use(Element);
+    Vue.use(Element,{locale});
     Vue.use(router);
     if(!isServer){
         router.beforeEach((to,from,next) => {
@@ -20,7 +20,7 @@ export default async ({Vue,isServer,router}) => {
             Vue.prototype.$axios = module.default
         })
         await import('element-ui').then(module => {
-            Vue.use(module.default,{locale})
+            Vue.use(module.default)
         }).catch(e => {
             console.log(e, 'element-ui error ')
         })
