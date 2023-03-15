@@ -103,7 +103,7 @@ export default {
     }
     @media(max-width: 768px){
       flex-direction: column-reverse;
-      gap: 0.16rem;
+      gap: 0.07rem;
     }
     @media (max-width: 576px) {
       box-sizing: border-box;
@@ -114,7 +114,7 @@ export default {
       display: flex;
       align-items: center;
       flex: 1;
-      max-width: 5.07rem;
+      max-width: 5.14rem;
       @media(max-width: 768px){
         flex-direction: column;
         gap: 0.08rem;
@@ -142,7 +142,7 @@ export default {
           color: #fff;
         }
         .el-input__inner::placeholder{
-          color: ;
+          color: rgba(255, 255, 255, 0.5);
         }
         .el-input-group__append {
           background: #1B0F3B;
