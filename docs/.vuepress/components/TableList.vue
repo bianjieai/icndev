@@ -2,7 +2,7 @@
   <div class="table_content">
     <el-table :data="tableData"
               :row-class-name="tableRowClassName"
-              :header-row-class-name="'header_style'" :empty-text="tableData.length ? 'No Data' : ''">
+              :header-row-class-name="'header_style'">
       <el-table-column v-for="(item,index) in columnData"
                        :prop="item.prop"
                        :label="item.label"
