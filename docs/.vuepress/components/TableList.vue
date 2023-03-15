@@ -3,6 +3,9 @@
     <el-table :data="tableData"
               :row-class-name="tableRowClassName"
               :header-row-class-name="'header_style'">
+      <template slot="empty">
+        <p>{{dataText}}</p>
+      </template>
       <el-table-column v-for="(item,index) in columnData"
                        :prop="item.prop"
                        :label="item.label"
@@ -32,19 +35,26 @@ export default {
   },
   data() {
     return {
-      tableList:[]
+      tableList:[],
+      dataText:""
     }
   },
   watch:{
     tableData:{
       handler(newValue) {
         this.tableList = newValue
+        if(!this.tableList.length){
+          this.dataText = "No Data"
+        }
       },
       deep: true
     }
   },
   mounted() {
-    this.tableList = this.tableData
+    this.tableList = this.tableData;
+    if(!this.tableList.length){
+      this.dataText = "No Data"
+    }
   },
   methods:{
     tableRowClassName({row, rowIndex}) {
