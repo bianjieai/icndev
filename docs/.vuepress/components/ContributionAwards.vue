@@ -3,7 +3,22 @@
     <div class="awards_title">Contribution Awards</div>
     <div class="table_content">
       <vue-scroll :ops="scrollBarConfig">
-        <table-list :table-data="awardTableData" :column-data="awardColumn"></table-list>
+        <el-table :data="awardTableData"
+                  :row-class-name="tableRowClassName"
+                  :header-row-class-name="'header_style'">
+          <el-table-column v-for="(item,index) in awardColumn"
+                           :prop="item.prop"
+                           :label="item.label"
+                           :min-width="item.width">
+            <template slot-scope="scope">
+              <div class="content_container">
+                <!--              <img class="rank_first_img" v-show="item.label==='Rank' && scope.row[item.prop] == 1"
+                                   src="../public/scoreCard/star.png" alt="">-->
+                <span :class="item.label === 'Team Name'? 'ellipsis_style' : ''">{{ scope.row[item.prop] }}</span>
+              </div>
+            </template>
+          </el-table-column>
+        </el-table>
       </vue-scroll>
     </div>
   </div>
@@ -12,16 +27,13 @@
 <script>
 import {serverUri} from "../config/config.json";
 import {scrollConfig} from "../constant";
-import TableList from "./TableList";
 export default {
   name: "ContributionAwards",
-  components: {TableList},
-
-  data () {
+  data() {
     return {
-      scrollBarConfig:scrollConfig,
-      awardTableData:[],
-      awardColumn:[
+      scrollBarConfig: scrollConfig,
+      awardTableData: [],
+      awardColumn: [
         {
           prop: 'rank',
           label: 'Rank',
@@ -48,35 +60,42 @@ export default {
   mounted() {
     this.getContributionAwardsData()
   },
-  methods:{
+  methods: {
     getContributionAwardsData() {
       const url = `${serverUri}/api/subscribe/special-awards`
       this.$axios.get(url).then((res) => {
-        if(res?.data?.code === 0 && res.data?.data?.score_rank?.length){
+        if (res?.data?.code === 0 && res.data?.data?.score_rank?.length) {
           this.awardTableData = res.data.data.score_rank;
         }
       })
     },
-
+    tableRowClassName({row, rowIndex}) {
+      const classNameArr = []
+      if (rowIndex % 2) {
+        classNameArr.push('stripe_style')
+      }
+      return classNameArr
+    }
   }
 }
 </script>
 
 <style scoped lang="less">
-.awards_container{
+.awards_container {
   width: 100%;
   max-width: 12rem;
   margin: 0.76rem auto 0 auto;
   padding-bottom: 1.2rem;
-  @media(max-width: 1200px){
+  @media (max-width: 1200px) {
     box-sizing: border-box;
     padding: 0 0.36rem 1.2rem;
   }
-  @media(max-width: 576px){
+  @media (max-width: 576px) {
     box-sizing: border-box;
     padding: 0 0.16rem 0.6rem;
   }
-  .awards_title{
+
+  .awards_title {
     font-size: 0.28rem;
     font-weight: bold;
     color: #FFFFFF;
