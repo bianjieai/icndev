@@ -7,7 +7,7 @@
                   v-model="inputValue"
                   clearable
                   @keydown.native="inputValueChange">
-          <el-button slot="append" icon="el-icon-search" @click.stop="clickSearch"></el-button>
+          <el-button slot="append" icon="iconfont icon-sousuo" @click.stop="clickSearch"></el-button>
         </el-input>
         <div class="waring_content" :style="{visibility:isShowWaring?'visible' : 'hidden'}">
           <span class="el-icon-warning">
@@ -113,6 +113,8 @@ export default {
     .input_search_content {
       display: flex;
       align-items: center;
+      flex: 1;
+      max-width: 5.07rem;
       @media(max-width: 768px){
         flex-direction: column;
         gap: 0.08rem;
@@ -139,7 +141,9 @@ export default {
           border-color: rgba(255, 255, 255, 0.35);
           color: #fff;
         }
-
+        .el-input__inner::placeholder{
+          color: ;
+        }
         .el-input-group__append {
           background: #1B0F3B;
           border-color: rgba(255, 255, 255, 0.35);
@@ -147,6 +151,9 @@ export default {
 
           .el-button {
             padding: 0.08rem 0.12rem;
+            i{
+              color:#7E3AE3;
+            }
           }
         }
 
