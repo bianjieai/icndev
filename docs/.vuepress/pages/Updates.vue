@@ -28,9 +28,7 @@ export default {
   name: "Updates",
   computed:{
         updateList() {
-          console.log(this.$page.frontmatter.updateList)
           return this.$page.frontmatter.updateList
-
         }
   }
 }

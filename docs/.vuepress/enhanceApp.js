@@ -1,8 +1,10 @@
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
 import vuescroll from "vuescroll";
+import iconfont from "./public/iconfont/iconfont.css"
+import locale from 'element-ui/lib/locale/lang/en'
 export default async ({Vue,isServer,router}) => {
-    Vue.use(Element);
+    Vue.use(Element,{locale});
     Vue.use(router);
     if(!isServer){
         router.beforeEach((to,from,next) => {
@@ -21,6 +23,9 @@ export default async ({Vue,isServer,router}) => {
             Vue.use(module.default)
         }).catch(e => {
             console.log(e, 'element-ui error ')
+        })
+        await import("./public/iconfont/iconfont").then(module => {
+            console.log(module, 'module ')
         })
         await import('vuescroll').then(module => {
             Vue.use(module.default)
