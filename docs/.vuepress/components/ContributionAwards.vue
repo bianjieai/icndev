@@ -2,7 +2,7 @@
   <div class="awards_container">
     <div class="awards_title">Contribution Awards</div>
     <div class="table_content">
-      <vue-scroll :ops="scrollBarConfig">
+      <vue-scroll :ops="scrollBarConfig" :key="'awardTable'">
         <el-table :data="awardTableData"
                   :row-class-name="tableRowClassName"
                   :header-row-class-name="'header_style'">
