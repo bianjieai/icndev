@@ -1,6 +1,6 @@
 <template>
   <div class="score_card_table">
-    <vue-scroll :ops="scrollBarConfig">
+    <vue-scroll :ops="scrollBarConfig" :key="'scoreCard'">
       <el-table :data="rankData"
                 :row-class-name="tableRowClassName"
                 :header-row-class-name="'header_style'">
