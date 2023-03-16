@@ -1,4 +1,5 @@
 const config = require('./config/config.json')
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 module.exports = {
     title:'Game of NFTs',
     description:'',
@@ -31,11 +32,8 @@ module.exports = {
         },
     },
     plugins: [
-        [
-            '@vuepress/google-analytics',
-            {
-                'ga': config.GoogleAnalyticsId // UA-00000000-0
-            }
-        ]
+        googleAnalyticsPlugin({
+            id:config.GoogleAnalyticsId
+        })
     ]
 }
