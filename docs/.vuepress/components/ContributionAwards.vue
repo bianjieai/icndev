@@ -105,6 +105,7 @@ export default {
   max-width: 12rem;
   margin: 0.76rem auto 0 auto;
   padding-bottom: 1.2rem;
+
   @media (max-width: 1200px) {
     box-sizing: border-box;
     padding: 0 0.36rem 1.2rem;
@@ -120,6 +121,21 @@ export default {
     color: #FFFFFF;
     line-height: 0.36rem;
     margin-bottom: 0.24rem;
+  }
+  ::v-deep .table_content{
+    .__vuescroll {
+      .__panel {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-track-color: transparent !important;
+        -ms-scrollbar-track-color: transparent !important;
+
+        &::-webkit-scrollbar {
+          width: 0 !important;
+        }
+      }
+    }
   }
 }
 </style>
