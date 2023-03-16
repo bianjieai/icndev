@@ -192,18 +192,55 @@ The first round airdrop will start at around 2023-03-15-06:00 UTC, and the secon
 <br/>
 
 **Rules:**
-- The `flow` can be queryied with `flow-id` [here](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/flow-table.md).
-- The `start_height` is the block height on IRISnet. Any transfer prior to the `start_height` will be considered invalid.
-- Participants must use their own account addresses provided at the registration stage.
-- The `last_owner` is an official address on IRISnet. After finishing the interchain NFT transfer, every participant transfer the NFT to `last_owner` then complete the race.
-- Considering the time zone difference, the completion time is calculated by the difference in height between the last NFT transfer (to the `last_owner`) and the first interchain NFT transfer on IRISnet.
-- The participant with the smallest difference in block height will rank higher, and in case of a tie, the ranking will be based on the height of the last transfer, with the participant having the lower height ranking higher.
-- The end of round 3 will be at `2023-03-17-23:59:59 UTC`. The height of evidence will be considered invalid if completed after the corresponding block height.
+* The `flow` can be queryied with `flow-id` [here](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/flow-table.md).
+* The `start_height` is the block height on IRISnet. Any transfer prior to the `start_height` will be considered invalid.
+* Participants must use their own account addresses provided at the registration stage.
+* The `last_owner` is an official address on IRISnet. After finishing the interchain NFT transfer, every participant transfer the NFT to `last_owner` then complete the race.
+* Considering the time zone difference, the completion time is calculated by the difference in height between the last NFT transfer (to the `last_owner`) and the first interchain NFT transfer on IRISnet.
+* The participant with the smallest difference in block height will rank higher, and in case of a tie, the ranking will be based on the height of the last transfer, with the participant having the lower height ranking higher.
+* The end of round 3 will be at `2023-03-17-23:59:59 UTC`. The height of evidence will be considered invalid if completed after the corresponding block height.
 
 <br/>
 
 #### Tasks:
 B1, B2, B3, B4
+
+<br/>
+<br/>
+<br/>
+
+## Challenge
+During the activity on the testnet, we found that there were some issues when transferring through the designated channels, possibly caused by defects or attacks. A large number of transactions needed to wait a long time to be smoothly relayed, which has become a recognized challenge.
+
+<br/>
+
+However, this is also the meaning of the existence of the testnet. By solving these exposed issues, we can operate better in the formal environment. Therefore, we have set up challenge tasks to encourage participants to solve these problems, ensure the stability and normal operation of the channels, and obtain challenge points.
+
+<br/>
+
+Open an issue on `gon-evidence` to show you can solve the challenge!
+
+<br/>
+
+### C1
+Provide the most effective strategy and tool for transferring a stuck transaction package to the destination chain, ensuring seamless transaction relay between different blockchains.
+
+<br/>
+
+**Rules:**
+* Select only two best solutions
+* Explain the principle and provide the code
+
+<br/>
+
+### C2
+Provide the most effective strategy to ensure smooth and uncongested transfer operation between chains, preventing batches of transactions from getting stuck.
+
+<br/>
+
+**Rules:**
+* Select only one best solution
+* Explain the principle and provide the code
 
 <br/>
 <br/>
@@ -258,6 +295,18 @@ For evidence submission, please refer to [gon-evidence](https://github.com/game-
 | B4  | 50    | Competitive! Individual Race Round 2 Winners | The top 10 participants will get 50 points each.    |
 | ... | ...   | ...                                          | ...                                                 |
 
+<br/>
+<br/>
+<br/>
+
+### Challenge Tasks
+| Id  | Point | Task                                   | Details             |
+| --- | ----- | -------------------------------------- | ------------------- |
+| C1  | 350   | Challenge! Relay your stucking package | At most two winners |
+| C2  | 800   | Challenge! Prevent bunch stuck txs     | At most one winner  |
+
+<br/>
+<br/>
 <br/>
 
 ### Award
