@@ -206,8 +206,6 @@ The first round airdrop will start at around 2023-03-15-06:00 UTC, and the secon
 B1, B2, B3, B4
 
 <br/>
-<br/>
-<br/>
 
 ### Challenge
 During the activity on the testnet, we found that there were some issues when transferring through the designated channels, possibly caused by defects or attacks. A large number of transactions needed to wait a long time to be smoothly relayed, which has become a recognized challenge.
