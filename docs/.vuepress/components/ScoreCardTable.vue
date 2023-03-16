@@ -41,13 +41,31 @@
 
 <script>
 import {serverUri} from "../config/config.json";
-import {scrollConfig} from "../constant";
 export default {
   name: "ScoreCardTable",
   data() {
     return {
       rankData: [],
-      scrollBarConfig:scrollConfig,
+      scrollBarConfig:{
+        detectResize: false,
+        rail: {
+          opacity: 1,
+          background: 'rgba(137, 65, 255, 0.34)',
+          size: '6px',
+        },
+        bar: {
+          keepShow: true,
+          size: '6px',
+          minSize: 0.1,
+          background: 'rgba(137, 65, 255, 1)',
+        },
+        vuescroll: {
+          wheelScrollDuration: 0,
+          wheelDirectionReverse: false,
+          locking: true,
+          checkShifKey: true,
+        },
+      },
       columnData: [
         {
           prop: 'rank',
