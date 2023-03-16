@@ -37,7 +37,7 @@ export default {
   components: {ContributionAwards, ScoreCardTable, Banner},
   data() {
     return {
-      updateTime: '',
+      updateTime: '--',
       inputValue: '',
       isKeyDown: true,
       isShowWaring: false,
