@@ -31,7 +31,26 @@ export default {
   name: "ContributionAwards",
   data() {
     return {
-      scrollBarConfig: scrollConfig,
+      scrollBarConfig: {
+        detectResize: false,
+        rail: {
+          opacity: 1,
+          background: 'rgba(137, 65, 255, 0.34)',
+          size: '6px',
+        },
+        bar: {
+          keepShow: true,
+          size: '6px',
+          minSize: 0.1,
+          background: 'rgba(137, 65, 255, 1)',
+        },
+        vuescroll: {
+          wheelScrollDuration: 0,
+          wheelDirectionReverse: false,
+          locking: true,
+          checkShifKey: true,
+        },
+      },
       awardTableData: [],
       awardColumn: [
         {
