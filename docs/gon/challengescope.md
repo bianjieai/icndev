@@ -206,10 +206,8 @@ The first round airdrop will start at around 2023-03-15-06:00 UTC, and the secon
 B1, B2, B3, B4
 
 <br/>
-<br/>
-<br/>
 
-## Challenge
+### Challenge
 During the activity on the testnet, we found that there were some issues when transferring through the designated channels, possibly caused by defects or attacks. A large number of transactions needed to wait a long time to be smoothly relayed, which has become a recognized challenge.
 
 <br/>
@@ -222,7 +220,7 @@ Open an issue on `gon-evidence` to show you can solve the challenge!
 
 <br/>
 
-### C1: Strategy of relaying your tx smoothly
+#### C1: Strategy of relaying your tx smoothly
 Provide the most effective strategy and tool for transferring a stuck transaction package to the destination chain, ensuring seamless transaction relay between different blockchains.
 
 <br/>
@@ -233,7 +231,7 @@ Provide the most effective strategy and tool for transferring a stuck transactio
 
 <br/>
 
-### C2: Strategy of preventing bunch txs stuck on channels
+#### C2: Strategy of preventing bunch txs stuck on channels
 Provide the most effective strategy to ensure smooth and uncongested transfer operation between chains, preventing batches of transactions from getting stuck.
 
 <br/>
