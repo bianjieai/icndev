@@ -153,6 +153,19 @@ export default {
   max-width: 12rem;
   margin: 0.12rem auto auto auto;
   padding-bottom: 1.2rem;
+  .__vuescroll {
+    .__panel {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scrollbar-color: transparent transparent !important;
+      scrollbar-track-color: transparent !important;
+      -ms-scrollbar-track-color: transparent !important;
+
+      &::-webkit-scrollbar {
+        width: 0 !important;
+      }
+    }
+  }
   @media (max-width: 1200px) {
     box-sizing: border-box;
     padding: 0 0.36rem;
