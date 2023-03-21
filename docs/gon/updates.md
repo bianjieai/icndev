@@ -5,6 +5,13 @@
     "layout": "PageLayout",
     "updateList":[
         {
+            "title": "[Blog] Update on Game of NFTs — Testnets & Hackathon",
+            "desc": "This blog post provides mid-game updates on GoN Phase 1, including testnet tasks and participation, community-contributed tools, and additional info.",
+            "author":"IRISnet",
+            "time": "Mar 20, 2023",
+            "href": "https://blog.cosmos.network/update-on-game-of-nfts-16f3efdfffd",
+        },
+        {
             "title": "[Blog] Game of NFTs Incentivized Testing Kicks Off!",
             "desc": "This blogpost announces the start of the Game of NFTs phase 1 incentivized testing, and released rules and requirements with more details.",
             "author":"IRISnet",
