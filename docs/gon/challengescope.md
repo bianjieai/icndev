@@ -270,6 +270,9 @@ The quiz questions cover different domains which are related to Cosmos and NFT. 
 <br/>
 
 **Tools:**
+
+<br/>
+
 We provide a tool for decrypting the enrpyted menenocis with the answer of each question. Note that go is a prerequsite for this tool.
 ```
 git clone https://github.com/game-of-nfts/gon-toolbox
