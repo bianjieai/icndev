@@ -112,7 +112,7 @@ IRISnet, Stargaze, Juno, Uptick and OmniFlix have prepared their testnets, allow
 
 <br/>
 
-#### Rules:
+**Rules:**
 * Participant issue their own classes and must set class data as the JSON string below
 * This allows participants to bind their classes(collections, denoms) to their GitHub account and prove that they have control over the class owner
 * All the following tasks related to NFT transfer must be minted under their classes
@@ -127,7 +127,7 @@ IRISnet, Stargaze, Juno, Uptick and OmniFlix have prepared their testnets, allow
 ```
 <br/>
 
-#### Tasks:
+**Tasks:**
 A1,A2,A3,A4,A5,A6
 
 <br/>
@@ -146,7 +146,7 @@ Participants complete Interchain NFTs Transfer independently, which means they n
 
 <br/>
 
-#### Rules:
+**Rules:**
 * Each NFT can only be used as evidence once for tasks in Round 2.
 * Participants must use NFT minted under classes/denoms they issued in Round 1.
 * Participants must use their own account addresses provided at the registration stage.
@@ -154,7 +154,7 @@ Participants complete Interchain NFTs Transfer independently, which means they n
 
 <br/>
 
-#### Tasks:
+**Tasks:**
 A7~A20
 
 <br/>
@@ -202,8 +202,92 @@ The first round airdrop will start at around 2023-03-15-06:00 UTC, and the secon
 
 <br/>
 
-#### Tasks:
+**Tasks:**
 B1, B2, B3, B4
+
+<br/>
+
+#### Round 4: Competitive Team Race
+Round 4 follows a procedure similar to that of Round 3, with the exception of a different ranking method. Participants will receive three rounds of airdrops simultaneously around `2023-03-21 06:00 UTC`, and then proceed with the Interchain NFT Transfer according to the flow in the `Task Data`. For the final interchain transfer, they must first transfer the NFT back to their Iris addresses and then transfer it to the `last_owner`. In this round, the ranking is calculated by summing the differences in block heights of each NFT between the last NFT transfer and the first Interchain NFT transfer on IRISnet. If two participants have the same sum, the participant with the lower sum of the first transfer height of each NFT will rank higher. Therefore, if participants have team members, they can transfer the three NFTs in parallel to get higher rank. **Note that you must complete all of B5, B6 and B7 in order to be eligible for ranking.**
+
+<br/>
+
+**Task Data:**
+```
+{
+  "type": "team race round",
+  "flow": "the flow id, check flow with flow-id on https://github.com/game-of-nfts/gon-testnets/blob/main/doc/flow-table.md",
+  "last_owner": "the ultimate owner of this NFT",
+  "start_height": "transfer before this height are considered invalid"
+}
+```
+
+<br/>
+
+**Rules:**
+* The `start_height` is the block height on IRISnet. Any transfer prior to the `start_height` will be considered invalid, which means your first Interchain NFT Transfer must happen after that height. Note that `start_height` is not used for calculate your grade.
+* The `last_owner` is an official address on IRISnet, and is the final recipient of the NFT in this game.
+* Considering the time zone difference, the completion time is calculated by the **difference** in height between the last NFT transfer (to the `last_owner`) and the first Interchain NFT transfer (not `start_height`) on IRISnet.
+* Participants must use their own account addresses provided at the registration stage.
+* Participants must complete all of B5, B6 and B7 in order to be eligible for the ranking, which is calculated by summing the differences in block heights of each NFT between the last NFT transfer and the first Interchain NFT transfer on IRISnet.
+* The third round of the competition will conclude at `2023-03-24 23:59:59 UTC`. After this, you can still complete B5, B6 and B7, but your race rank will not be counted, and you will not be eligible to win B8.
+* The top 10 participants in each airdrop round will be awarded B8 points. Evidence is not required for B8.
+
+<br>
+
+**Tasks:**
+B5, B6, B7, B8
+
+<br/>
+
+#### Round 5: Quiz Game
+In the quiz game, the organizers will airdrop 100 Quiz NFTs that are owned by 100 preset addresses around `2023-03-21 08:00 UTC`. Participants are required to **guess the answer** to the question in `Task Data`, which serves as the secret key to decrypt the mnemonics. The participants must then use the mnemonics to generate these preset addresses and transfer the NFT according to the flow.
+
+<br/>
+
+The quiz questions cover different domains which are related to Cosmos and NFT. All answers are single words containing lowercase characters, hyphens, and Arabic numerals.
+
+<br/>
+
+**Task Data:**
+```
+{
+	"question": "the answer of this question is the key to decrpyt the mnemonics",
+	"mnemonics_encrypted": "aes encrypted mnemonics",
+	"flow": "the flow id, check the flow off-chain"
+}
+```
+
+<br/>
+
+**Rules**
+* The answer is a single word of lowercase characters, hyphens and numbers. The possible format are `abc`, `abc-10`, `10-abc`, `10abc`, `abc10` and `1234`.
+* To ensure fairness, any DMs to the coordinators regarding quiz game will not be responded to.
+* A uniform encryption and decryption tool is provided to ensure that the answers can be correctly decrypted.
+* The total number of NFTs is only 100, and each player can solve as many questions as possible to get points.
+* The final owner of the NFT must be participants’ own addresses on IRISnet. Otherwise, they won’t get points.
+
+<br/>
+
+**Tools:**
+
+<br/>
+
+We provide a tool for decrypting the enrpyted menenocis with the answer of each question. Note that go is a prerequsite for this tool.
+```
+git clone https://github.com/game-of-nfts/gon-toolbox
+
+cd gon-toolbox
+
+make install
+
+gontool aes decrypt [answer] [encrypted_mnemonics]
+```
+
+<br/>
+
+**Tasks:**
+B9
 
 <br/>
 
@@ -285,13 +369,17 @@ For evidence submission, please refer to [gon-evidence](https://github.com/game-
 
 <br/>
 
-| #   | Point | Task                                         | Details                                             |
+| Id  | Point | Task                                         | Details                                             |
 | --- | ----- | -------------------------------------------- | --------------------------------------------------- |
 | B1  | 5     | Competitive! Individual Race Round 1         | Each participant will go through the same flow      |
 | B2  | 5     | Competitive! Individual Race Round 2         | Each participant will go through the different flow |
 | B3  | 50    | Competitive! Individual Race Round 1 Winners | The top 10 participants will get 50 points each.    |
 | B4  | 50    | Competitive! Individual Race Round 2 Winners | The top 10 participants will get 50 points each.    |
-| ... | ...   | ...                                          | ...                                                 |
+| B5  | 10    | Competitive! Team Race Round 1               | Each participant will go through the same flow      |
+| B6  | 10    | Competitive! Team Race Round 2               | Each participant will go through the same flow      |
+| B7  | 10    | Competitive! Team Race Round 3               | Each participant will go through the same flow      |
+| B8  | 150   | Competitive! Team Race Winner                | The top 10 participants will get 150 points each.   |
+| B9  | 10    | Quiz! Solve the quiz                         | This is a repeatable task                           |
 
 <br/>
 <br/>
