@@ -2,23 +2,24 @@
   <div class="register_container">
     <div class="bg_left_style"></div>
     <div class="register_content">
-      <div class="register_title">Phase 1 Incentivized Testing</div>
-      <div class="open_for_registration">Open for Evidence Submission</div>
+      <div class="register_title">Phase 2 Hackathon</div>
+      <div class="open_for_registration">On the Way</div>
       <div class="register_content_wrap">
         <div class="register_content_left">
-          <p>Game of NFTs (GoN) is a two-phase event with public incentivized testing and a hackathon where you can test the Interchain NFTs and build innovative NFT applications.</p>
-          <p>The testing phase has kicked off and will continue for the next few weeks. You can find the rules, requirements, and detailed tasks on the <a style="color: #9E63FF"
-                                                                                                                                                          href="https://github.com/bianjieai/gon-testnets"
-                                                                                                                                                          target="_blank"
-                                                                                                                                                          rel="noreferrer noopener">GoN GitHub page</a>. Enjoy your testing and compete for rewards!</p>
+          <p>The evidence submission for phase 1 incentivized testing is now concluded. Thanks for the exceptional performance and contributions!
+
+            Now you can check out the scores and rankings of all participating teams on the <a style="color: #9E63FF" href="https://interchainnfts.dev/gon/scorecard.html" target="_blank" rel="noreferrer noopener">scoreboard page</a>.
+
+            Please note that as this page is still being updated, it may not reflect the final result.</p>
+          <p>As phase 1 is coming to its close, we're intensively preparing for the follow-up hackathon to take Interchain NFTs to the next level. Make sure you mark your calendar for this exciting event!</p>
         </div>
         <div class="register_content_right">
           <div class="register_content_img_content">
             <img src="../public/register_bg.png" alt="">
             <div class="register_button_content">
-              <div class="register_button_label">View Tasks</div>
-              <div class="register_sign_up_label">Check out the complete testing rules</div>
-              <a href="https://interchainnfts.dev/gon/challengescope.html" rel="noreferrer noopener" class="register_button" target="_blank">Challenge Scope</a>
+              <div class="register_button_label">View Scores & Rankings</div>
+              <div class="register_sign_up_label">Welcome to check out the latest rankings!</div>
+              <a href="https://interchainnfts.dev/gon/scorecard.html" rel="noreferrer noopener" class="register_button" target="_blank">Go to the scoreboard page</a>
             </div>
           </div>
         </div>
@@ -35,6 +36,7 @@ export default {
 
 <style scoped lang="less">
 .register_container {
+  padding-top: 1.3rem;
   width: 100%;
   position: relative;
   z-index: 6;
@@ -193,7 +195,7 @@ export default {
             }
 
             .register_button {
-              width: 1.8rem;
+              width: 2.2rem;
               height: 0.4rem;
               background: url("../public/button_normal.png") no-repeat center center / cover;
               display: flex;
