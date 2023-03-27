@@ -14,11 +14,11 @@
 <br/>
 <br/>
 
-The GoN Incentivized Testing phase is currently underway.
+The evidence submission for the GoN Incentivized Testing phase is now closed. Thanks for your participation and contributions!
 
 <br/>
 
-Before you start, make sure to check out the rules and requirements on this page.
+Welcome to visit the [scoreboard page](https://interchainnfts.dev/gon/scorecard.html) to see where all participants are (Note that this page is still being updated, and may not reflect the final result).
 
 <br/>
 <br/>
@@ -36,7 +36,7 @@ Before you start, make sure to check out the rules and requirements on this page
 > Please note that this is not the full version and will be supplemented as the game proceeds. You can visit the [GoN GitHub page](https://github.com/game-of-nfts/gon-testnets) for details.
 
 <br/>
- 
+
 Through the several rounds in phase 1, participants are expected to gain knowledge and build an understanding of Interchain NFTs and help discover interesting attack vectors.
 
 <br/>
@@ -230,7 +230,7 @@ Round 4 follows a procedure similar to that of Round 3, with the exception of a 
 * Considering the time zone difference, the completion time is calculated by the **difference** in height between the last NFT transfer (to the `last_owner`) and the first Interchain NFT transfer (not `start_height`) on IRISnet.
 * Participants must use their own account addresses provided at the registration stage.
 * Participants must complete all of B5, B6 and B7 in order to be eligible for the ranking, which is calculated by summing the differences in block heights of each NFT between the last NFT transfer and the first Interchain NFT transfer on IRISnet.
-* The third round of the competition will conclude at `2023-03-24 23:59:59 UTC`. After this, you can still complete B5, B6 and B7, but your race rank will not be counted, and you will not be eligible to win B8.
+* The fourth round of the competition will conclude at `2023-03-24 23:59:59 UTC`. After this, you can still complete B5, B6 and B7, but your race rank will not be counted, and you will not be eligible to win B8.
 * The top 10 participants in each airdrop round will be awarded B8 points. Evidence is not required for B8.
 
 <br>
