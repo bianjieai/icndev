@@ -14,11 +14,11 @@
 <br/>
 <br/>
 
-The GoN Incentivized Testing phase is currently underway.
+The evidence submission for GoN Incentivized Testing phase is now closed. Thanks for your participation and contributions!
 
 <br/>
 
-Before you start, make sure to check out the rules and requirements on this page.
+Welcome to visit the [scoreboard page](https://interchainnfts.dev/gon/scorecard.html) to see where participants are (Since this page is still being updated, it may not reflect the final result).
 
 <br/>
 <br/>
