@@ -18,7 +18,7 @@ The evidence submission for the GoN Incentivized Testing phase is now closed. Th
 
 <br/>
 
-Welcome to visit the [scoreboard page](https://interchainnfts.dev/gon/scorecard.html) to see where participants are (Note that this page is still being updated, and may not reflect the final result).
+Welcome to visit the [scoreboard page](https://interchainnfts.dev/gon/scorecard.html) to see where all participants are (Note that this page is still being updated, and may not reflect the final result).
 
 <br/>
 <br/>
