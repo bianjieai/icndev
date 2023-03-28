@@ -4,14 +4,17 @@
       <div class="banner_content_img">
         <img class="banner_img" src="../public/banner.png" alt="Game of NFTs">
       </div>
-      <p class="banner_desc">Game of NFTs (GoN) is a two-phase event with public incentivized testing and a hackathon where you can test the Interchain NFTs and build innovative NFT applications.</p>
+      <p class="banner_desc" v-show="showDesc">Game of NFTs (GoN) is a two-phase event with public incentivized testing and a hackathon where you can test the Interchain NFTs and build innovative NFT applications.</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Banner"
+  name: "Banner",
+  props:{
+    showDesc: true
+  }
 }
 </script>
 
