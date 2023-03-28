@@ -2,7 +2,7 @@
   <div class="container">
     <Header></Header>
     <main class="main_container">
-      <Banner></Banner>
+      <Banner :show-desc="true"></Banner>
       <how-to-join></how-to-join>
       <Partners></Partners>
       <judges></judges>
