@@ -31,8 +31,7 @@ export default {
       return this.$page.title==='ScoreCard' && new Date().getTime() >= config.releaseTime
     },
     isShowWinners() {
-      console.log(this.$page.title,'页面展示')
-      return this.$page.title==='Winners'
+      return this.$page.title==='Winners' && new Date().getTime() >= config.releaseTime
     }
   }
 }
