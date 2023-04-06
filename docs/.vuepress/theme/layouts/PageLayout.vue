@@ -4,6 +4,7 @@
     <Updates v-if="this.$page.title==='Updates'"></Updates>
     <ChallengeScope  v-if="isShowChallengeScope"></ChallengeScope>
     <ScoreCard v-if="isShowScoreCard"></ScoreCard>
+    <Winners v-if="isShowWinners"></Winners>
   </div>
 </template>
 
@@ -13,9 +14,10 @@ import Header from "../../components/Header";
 import ChallengeScope from "../../pages/ChallengeScope";
 import ScoreCard from "../../pages/ScoreCard";
 import config from "../../config/config.json"
+import Winners from "../../pages/Winners";
 export default {
   name: "PageLayout.vue",
-  components: {ScoreCard, ChallengeScope, Header, Updates},
+  components: {Winners, ScoreCard, ChallengeScope, Header, Updates},
   data() {
     return {
        config
@@ -27,6 +29,10 @@ export default {
     },
     isShowScoreCard() {
       return this.$page.title==='ScoreCard' && new Date().getTime() >= config.releaseTime
+    },
+    isShowWinners() {
+      console.log(this.$page.title,'页面展示')
+      return this.$page.title==='Winners'
     }
   }
 }
