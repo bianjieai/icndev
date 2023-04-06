@@ -10,7 +10,7 @@
         <div class="winners_task_desc">
           Congratulations to the top-ranked team of all task competitors! And a round of applause to all competitors for their exceptional performance!
         </div>
-        <winner-trophy :trophy-title="'Phase 1 Task Winner'" :team-name="'empowerchain'"></winner-trophy>
+        <winner-trophy :trophy-title="''" :team-name="'empowerchain'"></winner-trophy>
         <h5 class="awards_winners_title">Contribution Awards Winners</h5>
         <div class="awards_winners_desc">
           Team listed here are selected at the discretion of the jury, based on the quality of their contributions and the extent to which they align with the award descriptions.
