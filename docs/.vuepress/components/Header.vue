@@ -33,7 +33,7 @@ export default {
       firstMenuList: [
         {
           href: '/gon/',
-          label: 'HOME',
+          label: 'Game of NFTs',
           isActive: false
         },
       ],
@@ -41,6 +41,11 @@ export default {
         {
           href: '/gon/updates.html',
           label: 'UPDATES',
+          isActive: false
+        },
+        {
+          href: '/gon/winners.html',
+          label: 'WINNERS',
           isActive: false
         },
       ],
@@ -102,8 +107,7 @@ export default {
     padding: 0.26rem 0;
     display: flex;
     align-items: center;
-    @media (max-width: 850px) {
-
+    @media (max-width: 950px) {
       max-width: none;
       justify-content: space-between;
       box-sizing: border-box;
@@ -125,7 +129,11 @@ export default {
       display: flex;
       gap: 0.6rem;
       margin: 0 0 0 0.75rem;
-      @media(max-width: 850px){
+      @media(max-width: 1100px){
+        gap: 0.3rem;
+      }
+
+      @media(max-width: 950px){
         display: none;
       }
       .header_menu_item {
@@ -157,7 +165,7 @@ export default {
       display: none;
       position: relative;
       justify-content: flex-end;
-      @media(max-width: 850px){
+      @media(max-width: 950px){
         display: inline-block;
       }
       .mobile_menu_icon{
