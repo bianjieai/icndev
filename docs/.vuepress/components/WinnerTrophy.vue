@@ -46,7 +46,7 @@ export default {
       font-weight: 400;
       color: #FFFFFF;
       line-height: 0.24rem;
-      margin-bottom: 0.24rem;
+      height: 0.48rem;
     }
     .trophy_content{
       display: flex;
