@@ -3,23 +3,23 @@
     <div class="bg_left_style"></div>
     <div class="register_content">
       <div class="register_title">Phase 2 Hackathon</div>
-      <div class="open_for_registration">On the Way</div>
+      <div class="open_for_registration">Open for Registration!</div>
       <div class="register_content_wrap">
         <div class="register_content_left">
-          <p>The evidence submission for phase 1 incentivized testing is now concluded. Thanks for the exceptional performance and contributions!
-
-            Now you can check out the scores and rankings of all participating teams on the <a style="color: #9E63FF" href="https://interchainnfts.dev/gon/scorecard.html" target="_blank" rel="noreferrer noopener">scoreboard page</a>.
-
-            Please note that as this page is still being updated, it may not reflect the final result.</p>
-          <p>As phase 1 is coming to its close, we're intensively preparing for the follow-up hackathon to take Interchain NFTs to the next level. Make sure you mark your calendar for this exciting event!</p>
+          <p>The evidence submission for phase 1 incentivized testing is now concluded. Thanks for the exceptional
+            performance and contributions! You can view the scores and rankings of all participants on the <a
+              style="color: #9E63FF" href="https://interchainnfts.dev/gon/scorecard.html" target="_blank"
+              rel="noreferrer noopener">scoreboard page</a>.</p>
+          <p>As we bid farewell to phase 1, the registration for the phase-2 Hackathon is now open! Let's take Interchain NFTs to the next level!</p>
         </div>
         <div class="register_content_right">
           <div class="register_content_img_content">
             <img src="../public/register_bg.png" alt="">
             <div class="register_button_content">
-              <div class="register_button_label">View Scores & Rankings</div>
-              <div class="register_sign_up_label">Welcome to check out the latest rankings!</div>
-              <a href="https://interchainnfts.dev/gon/scorecard.html" rel="noreferrer noopener" class="register_button" target="_blank">Go to the scoreboard page</a>
+              <div class="register_button_label">Join Hackathon</div>
+              <div class="register_sign_up_label">Sign up for the Hackathon and take Interchain NFTs to the next level!</div>
+              <a href="https://dorahacks.io/hackathon/game-of-nfts/detail" rel="noreferrer noopener" class="register_button"
+                 target="_blank">Register</a>
             </div>
           </div>
         </div>
@@ -144,20 +144,22 @@ export default {
       }
 
       .register_content_right {
-        @media(max-width: 1200px){
+        @media (max-width: 1200px) {
           margin-top: 0.2rem;
         }
+
         .register_content_img_content {
           width: 4.75rem;
           height: 3.97rem;
           position: relative;
-          @media(max-width: 768px){
+          @media (max-width: 768px) {
             width: 4rem;
           }
-          @media(max-width: 576px){
+          @media (max-width: 576px) {
             width: 3.6rem;
             height: 3.97rem;
           }
+
           img {
             width: 100%;
           }
@@ -166,29 +168,31 @@ export default {
             position: absolute;
             left: 0.48rem;
             bottom: 0.48rem;
-            @media(max-width: 768px){
+            @media (max-width: 768px) {
               bottom: 1rem;
             }
+
             .register_button_label {
               font-size: 0.28rem;
               font-weight: bold;
               color: #FFFFFF;
               line-height: 0.28rem;
               margin-bottom: 0.12rem;
-              @media(max-width: 768px){
+              @media (max-width: 768px) {
                 font-size: 0.2rem;
                 line-height: 0.24rem;
               }
             }
 
             .register_sign_up_label {
+              max-width: 4rem;
               font-size: 0.21rem;
               font-weight: 400;
               color: rgba(255, 255, 255, 0.82);
               line-height: 0.34rem;
               letter-spacing: -0.007rem;
               margin-bottom: 0.28rem;
-              @media(max-width: 768px){
+              @media (max-width: 768px) {
                 font-size: 0.16rem;
                 line-height: 0.18rem;
               }
@@ -203,7 +207,8 @@ export default {
               justify-content: center;
               color: #fff;
               @media (max-width: 576px) {
-                margin: 0.16rem auto 0.48rem auto;
+                margin-top: 0.16rem;
+                margin-bottom: 0.48rem;
               }
 
               &:hover {
