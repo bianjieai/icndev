@@ -60,6 +60,9 @@ export default {
         width: auto;
         margin-right: 0.16rem;
       }
+      .team_name {
+        font-size: 28px;
+      }
     }
   }
 </style>
