@@ -1,7 +1,9 @@
 <template>
   <div class="header_container">
     <div class="header_content">
-      <span class="header_logo_label">Game of NFTs</span>
+      <span class="header_logo_label">
+        <router-link to="/gon/">Game of NFTs</router-link>
+      </span>
       <ul class="header_menu_list_content">
         <li class="header_menu_item" v-for="(item,index) in menuListHeader" :key="index"
             :class="item.isActive ? 'active_style' : ''">
@@ -31,11 +33,11 @@ export default {
     return {
       menuList:[],
       firstMenuList: [
-        {
-          href: '/gon/',
-          label: 'Game of NFTs',
-          isActive: false
-        },
+        // {
+        //   href: '/gon/',
+        //   label: 'Game of NFTs',
+        //   isActive: false
+        // },
       ],
       lastMenuList: [
         {
@@ -123,6 +125,11 @@ export default {
 
     .header_logo_label {
       font-family: Silom;
+      cursor: pointer;
+
+      a:hover, a:visited, a:focus, a:active {
+        color: #fff;
+      }
     }
 
     .header_menu_list_content {
