@@ -83,9 +83,6 @@ export default {
   methods: {
     showMobileMenu(){
       this.isShowMobileMenu = !this.isShowMobileMenu
-    },
-    toHome () {
-
     }
   }
 }
