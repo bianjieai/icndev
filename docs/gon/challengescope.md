@@ -15,6 +15,9 @@
 <br/>
 
 Registration and submissions for the Interchain Hackathon are now open!
+
+<br/>
+
 To embark on your Hackathon adventure, please sign up and carefully read through the [rules](https://dorahacks.io/hackathon/game-of-nfts/rules) and challenge descriptions below.
 
 <br/>
