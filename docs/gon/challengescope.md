@@ -52,7 +52,7 @@ Some rough ideas for participants:
 
 <br/>
 
-Requirements & Docs will be added soon...
+***Requirements & Docs will be added soon...***
 
 <br/>
 
