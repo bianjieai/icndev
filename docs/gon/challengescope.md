@@ -49,6 +49,10 @@ Some rough ideas for participants:
 
 <br/>
 
+Requirements & Docs will be added soon...
+
+<br/>
+
 #### Prize Pool (equaling $50k)
 
 <br/>
