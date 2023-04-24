@@ -53,11 +53,11 @@ export default {
       },
       awardTableData: [],
       awardColumn: [
-        {
-          prop: 'rank',
-          label: 'Rank',
-          width: '168'
-        },
+        // {
+        //   prop: 'rank',
+        //   label: 'Rank',
+        //   width: '168'
+        // },
         {
           prop: 'team_name',
           label: 'Team Name',

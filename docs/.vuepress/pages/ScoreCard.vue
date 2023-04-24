@@ -1,6 +1,6 @@
 <template>
   <div class="container" @click.stop="removeTableLightStyle">
-    <Banner></Banner>
+    <Banner :show-desc="false"></Banner>
     <div class="update_time_wrap">
       <div class="input_search_content">
         <el-input placeholder="Search by team name"

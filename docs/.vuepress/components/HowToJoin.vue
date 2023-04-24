@@ -2,23 +2,22 @@
   <div class="register_container">
     <div class="bg_left_style"></div>
     <div class="register_content">
-      <div class="register_title">Phase 1 Incentivized Testing</div>
-      <div class="open_for_registration">Open for Evidence Submission</div>
+      <div class="register_title">Phase 2 Hackathon</div>
+      <div class="open_for_registration">Submit Your Entry!</div>
       <div class="register_content_wrap">
         <div class="register_content_left">
-          <p>Game of NFTs (GoN) is a two-phase event with public incentivized testing and a hackathon where you can test the Interchain NFTs and build innovative NFT applications.</p>
-          <p>The testing phase has kicked off and will continue for the next few weeks. You can find the rules, requirements, and detailed tasks on the <a style="color: #9E63FF"
-                                                                                                                                                          href="https://github.com/bianjieai/gon-testnets"
-                                                                                                                                                          target="_blank"
-                                                                                                                                                          rel="noreferrer noopener">GoN GitHub page</a>. Enjoy your testing and compete for rewards!</p>
+          <p>We're excited to announce that the entry submission for the GoN Phase-2 Interchain Hackathon is now open.</p>
+          <p>Whether you're a seasoned developer or a newcomer to the Intechain space, the Hackathon is the perfect place to showcase your skills and creativity by building with Interchain NFTs, network with other talented projects and developers, and win handsome rewards.</p>
+          <p>During the submission period, the registration link will remain open. Please sign up and go through the <a style="color: #9E63FF" target="_blank" rel="noreferrer noopener" href="https://interchainnfts.dev/gon/challengescope.html">challenge descriptions</a> carefully before submitting your project.</p>
         </div>
         <div class="register_content_right">
           <div class="register_content_img_content">
             <img src="../public/register_bg.png" alt="">
             <div class="register_button_content">
-              <div class="register_button_label">View Tasks</div>
-              <div class="register_sign_up_label">Check out the complete testing rules</div>
-              <a href="https://interchainnfts.dev/gon/challengescope.html" rel="noreferrer noopener" class="register_button" target="_blank">Challenge Scope</a>
+              <div class="register_button_label">Start BUIDLing!</div>
+              <div class="register_sign_up_label"></div>
+              <a href="https://dorahacks.io/hackathon/game-of-nfts/detail" rel="noreferrer noopener" class="register_button"
+                 target="_blank">Register & Submit</a>
             </div>
           </div>
         </div>
@@ -35,6 +34,7 @@ export default {
 
 <style scoped lang="less">
 .register_container {
+  padding-top: 1.3rem;
   width: 100%;
   position: relative;
   z-index: 6;
@@ -139,23 +139,28 @@ export default {
         p:first-child {
           margin-bottom: 0.23rem;
         }
+        p:last-child {
+          margin-top: 0.23rem;
+        }
       }
 
       .register_content_right {
-        @media(max-width: 1200px){
+        @media (max-width: 1200px) {
           margin-top: 0.2rem;
         }
+
         .register_content_img_content {
           width: 4.75rem;
           height: 3.97rem;
           position: relative;
-          @media(max-width: 768px){
+          @media (max-width: 768px) {
             width: 4rem;
           }
-          @media(max-width: 576px){
+          @media (max-width: 576px) {
             width: 3.6rem;
             height: 3.97rem;
           }
+
           img {
             width: 100%;
           }
@@ -164,36 +169,38 @@ export default {
             position: absolute;
             left: 0.48rem;
             bottom: 0.48rem;
-            @media(max-width: 768px){
+            @media (max-width: 768px) {
               bottom: 1rem;
             }
+
             .register_button_label {
               font-size: 0.28rem;
               font-weight: bold;
               color: #FFFFFF;
               line-height: 0.28rem;
               margin-bottom: 0.12rem;
-              @media(max-width: 768px){
+              @media (max-width: 768px) {
                 font-size: 0.2rem;
                 line-height: 0.24rem;
               }
             }
 
             .register_sign_up_label {
+              max-width: 4rem;
               font-size: 0.21rem;
               font-weight: 400;
               color: rgba(255, 255, 255, 0.82);
               line-height: 0.34rem;
               letter-spacing: -0.007rem;
               margin-bottom: 0.28rem;
-              @media(max-width: 768px){
+              @media (max-width: 768px) {
                 font-size: 0.16rem;
                 line-height: 0.18rem;
               }
             }
 
             .register_button {
-              width: 1.8rem;
+              width: 2.2rem;
               height: 0.4rem;
               background: url("../public/button_normal.png") no-repeat center center / cover;
               display: flex;
@@ -201,7 +208,8 @@ export default {
               justify-content: center;
               color: #fff;
               @media (max-width: 576px) {
-                margin: 0.16rem auto 0.48rem auto;
+                margin-top: 0.16rem;
+                margin-bottom: 0.48rem;
               }
 
               &:hover {

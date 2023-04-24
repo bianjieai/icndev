@@ -370,7 +370,7 @@ For evidence submission, please refer to [gon-evidence](https://github.com/game-
 <br/>
 
 | Id  | Point | Task                                         | Details                                             |
-| --- | ----- | -------------------------------------------- | --------------------------------------------------- |
+| --- |-------| -------------------------------------------- | --------------------------------------------------- |
 | B1  | 5     | Competitive! Individual Race Round 1         | Each participant will go through the same flow      |
 | B2  | 5     | Competitive! Individual Race Round 2         | Each participant will go through the different flow |
 | B3  | 50    | Competitive! Individual Race Round 1 Winners | The top 10 participants will get 50 points each.    |
@@ -379,7 +379,7 @@ For evidence submission, please refer to [gon-evidence](https://github.com/game-
 | B6  | 10    | Competitive! Team Race Round 2               | Each participant will go through the same flow      |
 | B7  | 10    | Competitive! Team Race Round 3               | Each participant will go through the same flow      |
 | B8  | 150   | Competitive! Team Race Winner                | The top 10 participants will get 150 points each.   |
-| B9  | 10    | Quiz! Solve the quiz                         | This is a repeatable task                           |
+| B9  | 5     | Quiz! Solve the quiz                         | This is a repeatable task                           |
 
 <br/>
 <br/>
@@ -396,14 +396,14 @@ For evidence submission, please refer to [gon-evidence](https://github.com/game-
 <br/>
 
 ### Award
-|Id|Points|Award|Details|
-|:----|:----|:----|:----|
-|1|1200|Best Auditor|Discover the most serious potential protocol and code vulnerabilities.|
-|2|800|Public Good Awards|Provide the tools to help test Interchain Transfer NFT, including interchain explorers, NFT path visualization tools, wallets, dashboards, etc. At most two.|
-|3|350|Community Star|Provide the most help for the game and participants.|
-|4|250|Best Promoter|Create the best GoN promotional content on social media.<br>*We will take views and other metrics into consideration*.|
-|5|200|Bug Hunters|Find bugs that affect the functionality of ICS-721. At most five.|
-|6|100|Best NFT Memes|Create the most popular NFT memes.|
+|Id| Points |Award|Details|
+|:----|:-------|:----|:----|
+|1| 1200   |Best Auditor|Discover the most serious potential protocol and code vulnerabilities.|
+|2| 800    |Public Good Awards|Provide the tools to help test Interchain Transfer NFT, including interchain explorers, NFT path visualization tools, wallets, dashboards, etc. At most two.|
+|3| 350    |Community Star|Provide the most help for the game and participants.|
+|4| 250    |Best Promoter|Create the best GoN promotional content on social media.<br>*We will take views and other metrics into consideration*.|
+|5| 300    |Bug Hunters|Find bugs that affect the functionality of ICS-721. At most five.|
+|6| 100    |Best NFT Memes|Create the most popular NFT memes.|
 
 <br/>
 <br/>
