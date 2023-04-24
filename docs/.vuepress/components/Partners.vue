@@ -19,6 +19,14 @@
           </li>
         </ul>
       </div>
+      <div class="tooling_support_content">
+        <p class="tooling_support_title">Tooling Supporters</p>
+        <ul class="tooling_support_logo_content">
+          <li class="tooling_support_item_logo" v-for="(item,index) in toolingSupports" :key="index">
+            <img :src="item.img" alt="">
+          </li>
+        </ul>
+      </div>
       <div class="technology_content">
         <p class="technology_title">Technology Initiator</p>
         <ul class="technology_logo_content">
@@ -69,6 +77,14 @@ export default {
         {
           img: require('../public/partnersLogo/IDG.png'),
         }
+      ],
+      toolingSupports:[
+        {
+          img: require('../public/partnersLogo/DoraHacks.png'),
+        },
+        {
+          img: require('../public/partnersLogo/HAMSTER.png'),
+        },
       ],
       technologyLogos:[
         {
@@ -175,6 +191,35 @@ export default {
         margin: 0.24rem auto 0 auto;
 
         .partner_institution_item_logo {
+          width: 2.24rem;
+          height: 0.8rem;
+
+          img {
+            width: 100%;
+
+          }
+        }
+      }
+    }
+    .tooling_support_content{
+      margin-top: 0.64rem;
+      .tooling_support_title {
+        font-size: 0.2rem;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.74);
+        line-height: 0.24rem;
+        text-align: center;
+      }
+
+      .tooling_support_logo_content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.24rem;
+        max-width: 8rem;
+        margin: 0.24rem auto 0 auto;
+
+        .tooling_support_item_logo {
           width: 2.24rem;
           height: 0.8rem;
 

@@ -3,23 +3,21 @@
     <div class="bg_left_style"></div>
     <div class="register_content">
       <div class="register_title">Phase 2 Hackathon</div>
-      <div class="open_for_registration">Open for Registration!</div>
+      <div class="open_for_registration">Submit Your Entry!</div>
       <div class="register_content_wrap">
         <div class="register_content_left">
-          <p>The evidence submission for phase 1 incentivized testing is now concluded. Thanks for the exceptional
-            performance and contributions! You can view the scores and rankings of all participants on the <a
-              style="color: #9E63FF" href="https://interchainnfts.dev/gon/scorecard.html" target="_blank"
-              rel="noreferrer noopener">scoreboard page</a>.</p>
-          <p>As we bid farewell to phase 1, the registration for the phase-2 Hackathon is now open! Let's take Interchain NFTs to the next level!</p>
+          <p>We're excited to announce that the entry submission for the GoN Phase-2 Interchain Hackathon is now open.</p>
+          <p>Whether you're a seasoned developer or a newcomer to the Intechain space, the Hackathon is the perfect place to showcase your skills and creativity by building with Interchain NFTs, network with other talented projects and developers, and win handsome rewards.</p>
+          <p>During the submission period, the registration link will remain open. Please sign up and go through the <a style="color: #9E63FF" target="_blank" rel="noreferrer noopener" href="https://interchainnfts.dev/gon/challengescope.html">challenge descriptions</a>carefully before submitting your project.</p>
         </div>
         <div class="register_content_right">
           <div class="register_content_img_content">
             <img src="../public/register_bg.png" alt="">
             <div class="register_button_content">
-              <div class="register_button_label">Join Hackathon</div>
-              <div class="register_sign_up_label">Sign up for the Hackathon and take Interchain NFTs to the next level!</div>
+              <div class="register_button_label">Start BUIDLing!</div>
+              <div class="register_sign_up_label"></div>
               <a href="https://dorahacks.io/hackathon/game-of-nfts/detail" rel="noreferrer noopener" class="register_button"
-                 target="_blank">Register</a>
+                 target="_blank">Register & Submit</a>
             </div>
           </div>
         </div>
@@ -140,6 +138,9 @@ export default {
 
         p:first-child {
           margin-bottom: 0.23rem;
+        }
+        p:last-child {
+          margin-top: 0.23rem;
         }
       }
 
