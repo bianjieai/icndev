@@ -142,20 +142,11 @@ Stargaze aims to integrate with Gravity Bridge in order to enable NFT transfers 
 <br/>
 
 (1) Install sdk.nft 0.46 on Gravity Bridge testnet. Gravity Bridge will be using sdk.nft and therefore needs the upgrade. The testnet branch can be found [here](https://github.com/Gravity-Bridge/Gravity-Bridge/tree/christianborst/sdk-upgrade-v0.46).
-
-<br/>
-
 (2) Install sdk.nft based ics721 version into Gravity Bridge.
-
-<br/>
-
 (3) Update Gravity Bridge orchestrator in the following way:
 * Listen to the NFT transfer into gravity contract event on Ethereum
 * Construct an ics721 packet
 * Publish ICS721 packet to the chain
-
-<br/>
-
 (4) Test an NFT transfer from Ethereum -> Gravity Bridge -> Stargaze
 > *Note that for this challenge, you will be collaborating with @synchronetic (Twitter)*
 
