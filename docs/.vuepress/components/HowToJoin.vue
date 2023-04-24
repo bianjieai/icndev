@@ -8,7 +8,7 @@
         <div class="register_content_left">
           <p>We're excited to announce that the entry submission for the GoN Phase-2 Interchain Hackathon is now open.</p>
           <p>Whether you're a seasoned developer or a newcomer to the Intechain space, the Hackathon is the perfect place to showcase your skills and creativity by building with Interchain NFTs, network with other talented projects and developers, and win handsome rewards.</p>
-          <p>During the submission period, the registration link will remain open. Please sign up and go through the <a style="color: #9E63FF" target="_blank" rel="noreferrer noopener" href="https://interchainnfts.dev/gon/challengescope.html">challenge descriptions</a>carefully before submitting your project.</p>
+          <p>During the submission period, the registration link will remain open. Please sign up and go through the <a style="color: #9E63FF" target="_blank" rel="noreferrer noopener" href="https://interchainnfts.dev/gon/challengescope.html">challenge descriptions</a> carefully before submitting your project.</p>
         </div>
         <div class="register_content_right">
           <div class="register_content_img_content">
