@@ -315,4 +315,7 @@ Bonus points will be awarded if CosmWasm Smart Contracts or ICA are used.
 <br/>
 
 ***[Phase 1 Testing Conclusion]***
+
+<br/>
+
 The GoN Incentivized Testing phase has been concluded! Welcome to visit the [GitHub page](https://github.com/game-of-nfts/gon-testnets) and [WINNERS page](https://interchainnfts.dev/gon/winners.html) to review the rules and final results.
