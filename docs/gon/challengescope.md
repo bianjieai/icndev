@@ -52,7 +52,27 @@ Some rough ideas for participants:
 
 <br/>
 
-***Requirements & Docs will be added soon...***
+#### Track Requirements
+
+<br/>
+
+* Open Source on GitHub or Gitlab.
+* Leverage Interchain Security and Interchain NFTs design in some way.
+* Development Phase: At least a Proof of Concept (PoC) with a realistic and actionable plan of implementation.
+* Video Demo: Provide a video demo to illustrate your project.
+* Documentation: Document the architecture, decisions and build & run steps a README.md at the root of your project.
+
+<br/>
+
+#### Docs
+
+<br/>
+
+* [https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer](https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer)
+* [https://github.com/cosmos/ibc/tree/main/spec/app/ics-028-cross-chain-validation](https://github.com/cosmos/ibc/tree/main/spec/app/ics-028-cross-chain-validation)
+* [https://github.com/cosmos/interchain-security](https://github.com/cosmos/interchain-security)
+* [https://github.com/bianjieai/nft-transfer](https://github.com/bianjieai/nft-transfer)
+* [https://github.com/public-awesome/ics721](https://github.com/public-awesome/ics721)
 
 <br/>
 
@@ -63,6 +83,7 @@ Some rough ideas for participants:
 * 1st Place: 2,750 ATOM
 * 2nd Place: 1,250 ATOM
 * 3rd Place: 500 ATOM
+Total: 4,500 ATOMs
 
 <br/>
 
