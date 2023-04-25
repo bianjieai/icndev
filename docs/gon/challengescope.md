@@ -104,11 +104,11 @@ Some rough ideas for you:
 
 <br/>
 
-[https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer](https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer)
-[https://docs.cosmos.network/main/modules/nft](https://docs.cosmos.network/main/modules/nft)
-[https://github.com/bianjieai/nft-transfer](https://github.com/bianjieai/nft-transfer)
-[https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet)
-...
+* [https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer](https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer)
+* [https://docs.cosmos.network/main/modules/nft](https://docs.cosmos.network/main/modules/nft)
+* [https://github.com/bianjieai/nft-transfer](https://github.com/bianjieai/nft-transfer)
+* [https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet)
+* ...
 
 <br/>
 
@@ -236,11 +236,11 @@ Suggestions for the challenges:
 
 <br/>
 
-[https://docs.uptick.network/intro/architecture.html](https://docs.uptick.network/intro/architecture.html)
-[https://docs.uptick.network/intro/resources.html](https://docs.uptick.network/intro/resources.html)
-[https://docs.uptick.network/testnet/faucet.html](https://docs.uptick.network/testnet/faucet.html)
-[https://docs.uptick.network/mainnet/explorer.html](https://docs.uptick.network/mainnet/explorer.html)
-[https://github.com/xavier200203/gon-workshop](https://github.com/xavier200203/gon-workshop)
+* [https://docs.uptick.network/intro/architecture.html](https://docs.uptick.network/intro/architecture.html)
+* [https://docs.uptick.network/intro/resources.html](https://docs.uptick.network/intro/resources.html)
+* [https://docs.uptick.network/testnet/faucet.html](https://docs.uptick.network/testnet/faucet.html)
+* [https://docs.uptick.network/mainnet/explorer.html](https://docs.uptick.network/mainnet/explorer.html)
+* [https://github.com/xavier200203/gon-workshop](https://github.com/xavier200203/gon-workshop)
 
 <br/>
 
