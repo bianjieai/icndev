@@ -15,7 +15,7 @@
             <img src="../public/register_bg.png" alt="">
             <div class="register_button_content">
               <div class="register_button_label">Start BUIDLing!</div>
-              <div class="register_sign_up_label"></div>
+<!--              <div class="register_sign_up_label"></div>-->
               <a href="https://dorahacks.io/hackathon/game-of-nfts/detail" rel="noreferrer noopener" class="register_button"
                  target="_blank">Register & Submit</a>
             </div>
@@ -178,7 +178,7 @@ export default {
               font-weight: bold;
               color: #FFFFFF;
               line-height: 0.28rem;
-              margin-bottom: 0.12rem;
+              margin-bottom: 0.32rem;
               @media (max-width: 768px) {
                 font-size: 0.2rem;
                 line-height: 0.24rem;
