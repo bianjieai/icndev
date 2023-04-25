@@ -83,6 +83,9 @@ Some rough ideas for participants:
 * 1st Place: 2,750 ATOM
 * 2nd Place: 1,250 ATOM
 * 3rd Place: 500 ATOM
+
+<br/>
+
 Total: 4,500 ATOMs
 
 <br/>
@@ -139,6 +142,9 @@ Some rough ideas for you:
 * 1st Place: 745,379 IRIS
 * 2nd Place: 447,227 IRIS
 * 3rd Place: 298,152 IRIS
+
+<br/>
+
 Total: 1,490,758 IRIS
 
 <br/>
@@ -206,6 +212,9 @@ Stargaze aims to integrate with Gravity Bridge in order to enable NFT transfers 
 * 1st Place: $25k in STARS
 * 2nd Place: $15k in STARS
 * 3rd Place: $10k in STARS
+
+<br/>
+
 Total: 2,874,035,15 STARS
 
 <br/>
@@ -275,6 +284,9 @@ Suggestions for the challenges:
 * 3rd Place: 90,000 in UPTICK
 * 4th-5th Places: 30,000 UPTICK each
 * 6th-9th Places: 20,000 UPTICK each
+
+<br/>
+
 Total: 500,000 UPTICK
 
 <br/>
@@ -314,6 +326,9 @@ Bonus points will be awarded if CosmWasm Smart Contracts or ICA are used.
 * 1st Place: 50,000 FLIX
 * 2nd Place: 25,000 FLIX
 * 3rd Place: 25,000 FLIX
+
+<br/>
+
 Total: 100,000 FLIX
 
 <br/>
