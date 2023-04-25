@@ -129,7 +129,6 @@ Some rough ideas for you:
 * [https://docs.cosmos.network/main/modules/nft](https://docs.cosmos.network/main/modules/nft)
 * [https://github.com/bianjieai/nft-transfer](https://github.com/bianjieai/nft-transfer)
 * [https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet)
-* ...
 
 <br/>
 
