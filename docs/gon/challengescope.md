@@ -52,7 +52,27 @@ Some rough ideas for participants:
 
 <br/>
 
-***Requirements & Docs will be added soon...***
+#### Track Requirements
+
+<br/>
+
+* Open Source on GitHub or Gitlab.
+* Leverage Interchain Security and Interchain NFTs design in some way.
+* Development Phase: At least a Proof of Concept (PoC) with a realistic and actionable plan of implementation.
+* Video Demo: Provide a video demo to illustrate your project.
+* Documentation: Document the architecture, decisions and build & run steps a README.md at the root of your project.
+
+<br/>
+
+#### Docs
+
+<br/>
+
+* [https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer](https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer)
+* [https://github.com/cosmos/ibc/tree/main/spec/app/ics-028-cross-chain-validation](https://github.com/cosmos/ibc/tree/main/spec/app/ics-028-cross-chain-validation)
+* [https://github.com/cosmos/interchain-security](https://github.com/cosmos/interchain-security)
+* [https://github.com/bianjieai/nft-transfer](https://github.com/bianjieai/nft-transfer)
+* [https://github.com/public-awesome/ics721](https://github.com/public-awesome/ics721)
 
 <br/>
 
@@ -63,6 +83,10 @@ Some rough ideas for participants:
 * 1st Place: 2,750 ATOM
 * 2nd Place: 1,250 ATOM
 * 3rd Place: 500 ATOM
+
+<br/>
+
+Total: 4,500 ATOMs
 
 <br/>
 
@@ -104,11 +128,10 @@ Some rough ideas for you:
 
 <br/>
 
-[https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer](https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer)
-[https://docs.cosmos.network/main/modules/nft](https://docs.cosmos.network/main/modules/nft)
-[https://github.com/bianjieai/nft-transfer](https://github.com/bianjieai/nft-transfer)
-[https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet)
-...
+* [https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer](https://github.com/cosmos/ibc/tree/main/spec/app/ics-721-nft-transfer)
+* [https://docs.cosmos.network/main/modules/nft](https://docs.cosmos.network/main/modules/nft)
+* [https://github.com/bianjieai/nft-transfer](https://github.com/bianjieai/nft-transfer)
+* [https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet](https://github.com/game-of-nfts/gon-testnets/blob/main/doc/testnet-info.md#irisnet)
 
 <br/>
 
@@ -119,6 +142,10 @@ Some rough ideas for you:
 * 1st Place: 745,379 IRIS
 * 2nd Place: 447,227 IRIS
 * 3rd Place: 298,152 IRIS
+
+<br/>
+
+Total: 1,490,758 IRIS
 
 <br/>
 
@@ -188,6 +215,10 @@ Stargaze aims to integrate with Gravity Bridge in order to enable NFT transfers 
 
 <br/>
 
+Total: 2,874,035,15 STARS
+
+<br/>
+
 ### Uptick Track
 
 <br/>
@@ -236,11 +267,11 @@ Suggestions for the challenges:
 
 <br/>
 
-[https://docs.uptick.network/intro/architecture.html](https://docs.uptick.network/intro/architecture.html)
-[https://docs.uptick.network/intro/resources.html](https://docs.uptick.network/intro/resources.html)
-[https://docs.uptick.network/testnet/faucet.html](https://docs.uptick.network/testnet/faucet.html)
-[https://docs.uptick.network/mainnet/explorer.html](https://docs.uptick.network/mainnet/explorer.html)
-[https://github.com/xavier200203/gon-workshop](https://github.com/xavier200203/gon-workshop)
+* [https://docs.uptick.network/intro/architecture.html](https://docs.uptick.network/intro/architecture.html)
+* [https://docs.uptick.network/intro/resources.html](https://docs.uptick.network/intro/resources.html)
+* [https://docs.uptick.network/testnet/faucet.html](https://docs.uptick.network/testnet/faucet.html)
+* [https://docs.uptick.network/mainnet/explorer.html](https://docs.uptick.network/mainnet/explorer.html)
+* [https://github.com/xavier200203/gon-workshop](https://github.com/xavier200203/gon-workshop)
 
 <br/>
 
@@ -253,6 +284,9 @@ Suggestions for the challenges:
 * 3rd Place: 90,000 in UPTICK
 * 4th-5th Places: 30,000 UPTICK each
 * 6th-9th Places: 20,000 UPTICK each
+
+<br/>
+
 Total: 500,000 UPTICK
 
 <br/>
@@ -295,8 +329,14 @@ Bonus points will be awarded if CosmWasm Smart Contracts or ICA are used.
 
 <br/>
 
+Total: 100,000 FLIX
+
+<br/>
+
 ***More details will be added soon…***
 
+<br/>
+<br/>
 <br/>
 
 ## Important Links
