@@ -5,6 +5,13 @@
     "layout": "PageLayout",
     "updateList":[
         {
+            "title": "[Blog] Announcing the Game of NFTs - Interchain Hackathon",
+            "desc": "Kicking off the exciting Interchain Hackathon —— The registration and entry submission for GoN phase 2 are now open!",
+            "author":"IRISnet",
+            "time": "Apr 26, 2023",
+            "href": "https://blog.cosmos.network/announcing-the-game-of-nfts-interchain-hackathon-5ac73f4f6d85",
+        },
+        {
             "title": "[Blog] Update on Game of NFTs — Testnets & Hackathon",
             "desc": "This blog post provides mid-game updates on GoN Phase 1, including testnet tasks and participation, community-contributed tools, and additional info.",
             "author":"IRISnet",
