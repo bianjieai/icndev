@@ -7,8 +7,9 @@ ARG GOOGLEANALYTICSID=null
 ARG RELEASETIME=null
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \
     apk add git \
-    && yarn run params $BANKENADDR,$GOOGLEANALYTICSID,$RELEASETIME \
-    && yarn docs:build
+    && yarn config set registry https://registry.npm.taobao.org/ \
+    && npm install cnpm -g && cnpm install && cnpm run params $BANKENADDR,$GOOGLEANALYTICSID,$RELEASETIME \
+    && npm docs:build
 
 FROM nginx:1.19-alpine
 COPY --from=builder /app/docs/.vuepress/dist/ /usr/share/nginx/html/
