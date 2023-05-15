@@ -7,7 +7,6 @@ ARG GOOGLEANALYTICSID=null
 ARG RELEASETIME=null
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \
     apk add git \
-    && yarn config set registry https://registry.npm.taobao.org/ \
     && yarn run params $BANKENADDR,$GOOGLEANALYTICSID,$RELEASETIME \
     && yarn docs:build
 
