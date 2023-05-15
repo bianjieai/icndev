@@ -7,7 +7,7 @@ ARG GOOGLEANALYTICSID=null
 ARG RELEASETIME=null
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
     && npm config set registry https://registry.npm.taobao.org/ \
-    && sudo npm install commander -g  \
+    && npm install commander -g  \
     && npm install cnpm -g  \
     && cnpm install  \
     && cnpm run params $BANKENADDR,$GOOGLEANALYTICSID,$RELEASETIME \
