@@ -1,4 +1,4 @@
-FROM node:16.15.1-alpine3.16 as builder
+FROM node:16.17.0-alpine3.16 as builder
 WORKDIR /app
 COPY . .
 ARG ENVIRONMENT=qa
