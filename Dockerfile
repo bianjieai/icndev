@@ -11,7 +11,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
     && npm install cnpm -g  \
     && cnpm install  \
     && cnpm run params $BANKENADDR,$GOOGLEANALYTICSID,$RELEASETIME \
-    && npm docs:build
+    && npm run docs:build
 
 FROM nginx:1.19-alpine
 COPY --from=builder /app/docs/.vuepress/dist/ /usr/share/nginx/html/
