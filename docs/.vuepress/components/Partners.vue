@@ -85,6 +85,9 @@ export default {
         {
           img: require('../public/partnersLogo/HAMSTER.png'),
         },
+        {
+          img: require('../public/partnersLogo/SAONETWORK.png')
+        }
       ],
       technologyLogos:[
         {
