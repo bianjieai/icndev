@@ -1,15 +1,17 @@
-FROM node:16.15.1-alpine3.16 as builder
+FROM node:16.17.0-alpine3.16 as builder
 WORKDIR /app
 COPY . .
 ARG ENVIRONMENT=qa
 ARG BANKENADDR=null
 ARG GOOGLEANALYTICSID=null
 ARG RELEASETIME=null
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \
-    apk add git && \
-    yarn install --registry http://registry.npmmirror.com \
-    && yarn run params $BANKENADDR,$GOOGLEANALYTICSID,$RELEASETIME \
-    && yarn docs:build
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
+    && npm config set registry https://registry.npm.taobao.org/ \
+    && npm install commander -g  \
+    && npm install cnpm -g  \
+    && cnpm install  \
+    && cnpm run params $BANKENADDR,$GOOGLEANALYTICSID,$RELEASETIME \
+    && npm run docs:build
 
 FROM nginx:1.19-alpine
 COPY --from=builder /app/docs/.vuepress/dist/ /usr/share/nginx/html/

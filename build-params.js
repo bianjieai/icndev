@@ -7,14 +7,14 @@ function list (val) {
 program
     .option("-p, <items>","config list" ,list)
     .parse(process.argv);
-
+console.log(program,'program')
 replaceEnv([
       "./docs/.vuepress/config/config.json",
     ],
     {
-      "serverUri": program.P[0],
-      "GoogleAnalyticsId": program.P[1],
-      "releaseTime": program.P[2],
+      "serverUri": program._optionValues.p[0],
+      "GoogleAnalyticsId": program._optionValues.p[1],
+      "releaseTime": program._optionValues.p[2],
     }
 );
 

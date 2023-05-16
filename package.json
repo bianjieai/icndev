@@ -5,8 +5,12 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
+    "vue": "2.7.14",
+    "vue-server-renderer": "2.7.14",
+    "vue-router": "3.6.5",
     "async-validator": "^1.11.5",
     "axios": "^1.2.1",
+    "commander": "^10.0.1",
     "dayjs": "^1.11.7",
     "element-ui": "^2.15.12",
     "less": "^4.1.3",
