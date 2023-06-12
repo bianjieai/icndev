@@ -53,12 +53,6 @@ export default {
           post:'Co-founder, Stargaze'
         },
         {
-          img:require('../public/judges/JakeHartnell.png'),
-          name:'Jake Hartnell',
-          post:'Co-founder, ' +
-            'Juno/DAO DAO'
-        },
-        {
           img:require('../public/judges/BrianXin.jpg'),
           name:'Brian Xin',
           post:'Founder, Uptick Network'
