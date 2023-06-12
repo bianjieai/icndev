@@ -1,5 +1,5 @@
 {
-  "serverUri": "a b v",
-  "GoogleAnalyticsId": "undefined",
-  "releaseTime": "undefined"
+  "serverUri": "${serverUri}",
+  "GoogleAnalyticsId": "${GoogleAnalyticsId}",
+  "releaseTime": "${releaseTime}"
 }
