@@ -183,6 +183,11 @@ export default {
                 font-size: 0.2rem;
                 line-height: 0.24rem;
               }
+              @media (max-width: 575px) {
+                max-width:2.8rem;
+                font-size: 0.2rem;
+                line-height: 0.24rem;
+              }
             }
 
             .register_sign_up_label {
