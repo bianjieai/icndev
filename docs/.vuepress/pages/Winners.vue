@@ -250,11 +250,14 @@ export default {
     max-width: 19.2rem;
     margin: 0 auto;
     padding-bottom: 1rem;
+    background: url("../public/bg.png") no-repeat center center;
+    background-size: cover;
     .winner_content_container_wrap{
       color: #fff;
       width: 100%;
       max-width: 9rem;
       margin: 0 auto;
+
       .winner_content_desc{
         font-size: 0.24rem;
         font-weight: 400;
