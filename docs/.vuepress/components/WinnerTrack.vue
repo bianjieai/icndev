@@ -1,7 +1,7 @@
 <template>
   <div class="winner_track_container">
     <h5 class="winner_track_title">{{trophyTitle}}</h5>
-    <div class="winner_track_content" v-for="(item,index) in list">
+    <div class="winner_track_content" v-for="(item,index) in list" :key="index">
       <div class="winner_track_wrap">
         <div class="trophy_content">
           <img class="cup_img" :src="item.img" alt="">
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .winner_track_container{
   .winner_track_title{
     text-align: center;
@@ -46,11 +46,10 @@ export default {
     margin-top: 0.48rem;
   }
   .winner_track_content{
-    width: 100%;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
-  //background: radial-gradient(ellipse, rgba(104, 59, 19, 0.65) 0%, rgba(104, 59, 19, 0.85) 0%, rgba(0, 0, 0, 0.85) 65%);
     background: url("../public/winner_trophy_bg.png") no-repeat center center;
     background-size: cover;
     margin-bottom: 0.6rem;
@@ -58,7 +57,6 @@ export default {
       margin-bottom: 0.48rem;
     }
     @media(max-width: 500px){
-    //background: url("../public/winner_trophy_bg.png") no-repeat center center;
       background-size: 120%;
     }
     .winner_track_wrap{
