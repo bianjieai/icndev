@@ -43,7 +43,7 @@ export default {
     }
     .winner_trophy_title{
       font-size: 0.16rem;
-      font-weight: 400;
+      font-weight: 600;
       color: #FFFFFF;
       line-height: 0.24rem;
       height: 0.48rem;
@@ -61,6 +61,7 @@ export default {
         margin-right: 0.16rem;
       }
       .team_name {
+        font-weight: 600;
         font-size: 28px;
       }
     }

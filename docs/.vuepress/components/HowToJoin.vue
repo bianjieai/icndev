@@ -2,22 +2,22 @@
   <div class="register_container">
     <div class="bg_left_style"></div>
     <div class="register_content">
-      <div class="register_title">Phase 2 Hackathon</div>
-      <div class="open_for_registration">Successfully Concluded!</div>
+      <div class="register_title">Game of NFTs</div>
+      <div class="open_for_registration">Celebrate the Conclusion!</div>
       <div class="register_content_wrap">
         <div class="register_content_left">
-          <p>With proud and gratitude, we announce that both two phases of GoN are now successfully concluded! Our gratitude goes to all the talented teams and individuals who participated and showcased their skills in this event.</p>
-          <p>Currently all submissions in phase 2 are being carefully reviewed and assessed by our dedicated team of judges. We encourage you to stay tuned and keep an eye on our website for the final results. </p>
-          <p>The Game of NFTs journey has ended here, but our mission and dream of Interchain NFTs will extend far beyond. Let's start here and meet in the future!</p>
+          <p>With the conclusion of the Interchain Hackathon, the exhilarating developer event Game of NFTs has come to an thrilling end! Winners of both two phases have already been announced, welcome to check the complete list <a href="https://interchainnfts.dev/gon/winners.html" :style="{color: '#9e63ff'}" target="_blank" rel="noreferrer noopener">here</a>. Big shoutout to all participants, judges, and contributors who made this event a resounding success!</p>
+          <p>As the curtains fall, we look ahead with great anticipation. The impact of GoN will reverberate for years to come. We hope this journey has sparked new connections and opened doors to exciting new opportunities.</p>
+          <p>Stay tuned for more adventures as we continue pushing the boundaries of Interchain NFTs!</p>
         </div>
         <div class="register_content_right">
           <div class="register_content_img_content">
             <img src="../public/register_bg.png" alt="">
             <div class="register_button_content">
-              <div class="register_button_label">Game of NFTs is now concluded</div>
-              <div class="register_sign_up_label">Congrats for completing the journey!</div>
-              <a href="https://interchainnfts.dev/gon/updates.html" rel="noreferrer noopener" class="register_button"
-                 target="_blank">Check previous updates</a>
+              <div class="register_button_label">Game of NFTs <br/> is now concluded</div>
+              <div class="register_sign_up_label">Congrats to all winners!</div>
+              <a href="https://interchainnfts.dev/gon/winners.html" rel="noreferrer noopener" class="register_button"
+                 target="_blank">Check out the winner list</a>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default {
               font-size: 0.28rem;
               font-weight: bold;
               color: #FFFFFF;
-              line-height: 0.28rem;
+              line-height: 0.32rem;
               margin-bottom: 0.32rem;
               @media (max-width: 768px) {
                 font-size: 0.2rem;
