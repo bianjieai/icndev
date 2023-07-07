@@ -19,15 +19,11 @@
     <div class="winners_content">
       <div class="winners_content_wrap">
         <h2 class="winners_title">Incentivized Testing Winners</h2>
-        <div class="winners_desc">Thank you for your participation and outstanding contributions in the Game of NFTs
-          Incentivized Testing phase! After careful evaluation by the jury, we're excited to announce the winners!
+        <div class="winners_desc">Thank you for your participation and outstanding contributions in the GoN Incentivized Testing phase! Congratulations to all the winners!
         </div>
-        <div class="winners_desc_1">The prize pool will be allocated <a href="https://medium.com/p/c4ce529b4922#278d"
+        <div class="winners_desc_1">Visit the <a href="https://interchainnfts.dev/gon/scorecard.html"
                                                                         target="_blank" style="color: #9E63FF"
-                                                                        rel="noreferrer noopener">according to the
-          points scored by each participant</a>. For detailed scores and rankings, please visit the <a
-          href="https://interchainnfts.dev/gon/scorecard.html" target="_blank" style="color: #9E63FF"
-          rel="noreferrer noopener">scoreboard</a>.
+                                                                        rel="noreferrer noopener">scoreboard</a> for detailed scores and rankings.
         </div>
         <h5 class="winners_task_title">Task-Completion Winner</h5>
         <div class="winners_task_desc">

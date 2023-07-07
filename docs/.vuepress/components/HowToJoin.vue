@@ -14,7 +14,7 @@
           <div class="register_content_img_content">
             <img src="../public/register_bg.png" alt="">
             <div class="register_button_content">
-              <div class="register_button_label">Game of NFTs is now concluded</div>
+              <div class="register_button_label">Game of NFTs <br/> is now concluded</div>
               <div class="register_sign_up_label">Congrats to all winners!</div>
               <a href="https://interchainnfts.dev/gon/winners.html" rel="noreferrer noopener" class="register_button"
                  target="_blank">Check out the winner list</a>
@@ -177,7 +177,7 @@ export default {
               font-size: 0.28rem;
               font-weight: bold;
               color: #FFFFFF;
-              line-height: 0.28rem;
+              line-height: 0.32rem;
               margin-bottom: 0.32rem;
               @media (max-width: 768px) {
                 font-size: 0.2rem;
