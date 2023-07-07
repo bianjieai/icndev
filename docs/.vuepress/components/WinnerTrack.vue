@@ -41,6 +41,9 @@ export default {
     color: #FFFFFF;
     line-height: 0.24rem;
     margin: 1rem 0 0.32rem 0;
+    @media(max-width: 768px){
+      padding: 0 0.2rem;
+    }
   }
 
   .winner_track_content{
@@ -58,6 +61,9 @@ export default {
     }
     .winner_track_wrap{
       display: flex;
+      @media(max-width: 400px){
+        width: 100%;
+      }
       .trophy_content{
         display: flex;
         width: 100%;
@@ -90,6 +96,12 @@ export default {
             color: #FFFFFF;
             line-height: 0.36rem;
             margin-left: 0.52rem;
+            @media(max-width: 768px){
+              max-width: 1.7rem;
+              font-size: 0.21rem;
+              line-height: 0.28rem;
+              margin-left: 0.24rem;
+            }
             &:hover{
               color: #9E63FF;
             }
