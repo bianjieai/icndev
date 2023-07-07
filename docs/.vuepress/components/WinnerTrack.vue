@@ -70,7 +70,7 @@ export default {
         justify-content: center;
         padding: 0.6rem 0;
         @media(max-width: 768px){
-          padding-bottom: 0.52rem;
+          padding: 0 0.2rem 0.52rem 0.2rem;
         }
         .cup_img{
           height: 0.48rem;
@@ -79,11 +79,15 @@ export default {
         }
         .team_name {
           font-size: 28px;
+          display: flex;
+          align-items: center;
           .ranking{
+            width: 0.9rem;
             font-size: 0.16rem;
             font-weight: 400;
             color: #FFFFFF;
             line-height: 0.24rem;
+            white-space: nowrap;
           }
           .href_name{
             font-size: 0.28rem;
