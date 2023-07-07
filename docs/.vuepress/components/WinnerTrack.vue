@@ -6,7 +6,7 @@
         <div class="trophy_content">
           <img class="cup_img" :src="item.img" alt="">
           <div class="team_name">
-            <div class="ranking">{{item.label}}</>
+            <div class="ranking">{{item.label}}</div>
             <a class="href_name" :href="item.href" target="_blank" rel="noreferrer noopener">{{item.value}}</a>
           </div>
         </div>
