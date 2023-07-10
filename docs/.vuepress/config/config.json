@@ -1,5 +1,5 @@
 {
-  "serverUri": "http://interchainnfts.dev.sh.bianjie.ai",
-  "GoogleAnalyticsId": "G-7V5BCCBYLX",
-  "releaseTime": "0"
+  "serverUri": "${serverUri}",
+  "GoogleAnalyticsId": "${GoogleAnalyticsId}",
+  "releaseTime": "${releaseTime}"
 }
